@@ -1,30 +1,39 @@
 /* @media */
 
 /* background */
-.bg-black   { background-color: #000000; }
-.bg-grey    { background-color: #999999; }
-.bg-silver   { background-color: #EEEEEE; }
-.bg-blue     { background-color: #4990E2; }
-.bg-red      { background-color: #D0011B; }
-.bg-green  { background-color: #7ED321; }
+.bg-black     { background-color: #000000; }
+.bg-grey      { background-color: #999999; }
+.bg-silver    { background-color: #EEEEEE; }
+.bg-blue      { background-color: #4990E2; }
+.bg-red       { background-color: #D0011B; }
+.bg-green     { background-color: #7ED321; }
 
 /*  background-images */
-.bg-center { background-repeat: no-repeat; background-position: center center; }
-.cover { background-size: cover; }
-.contain { background-size: contain; }
+.bg-center    { background-repeat: no-repeat; background-position: center center; }
+.cover        { background-size: cover; }
+.contain      { background-size: contain; }
+.bg-fade90    { background-color: rgba( 85, 85, 85, .9 ); }
+.bg-fade80    { background-color: rgba( 85, 85, 85, .8 ); }
+.bg-fade70    { background-color: rgba( 85, 85, 85, .7 ); }
+.bg-fade60    { background-color: rgba( 85, 85, 85, .6 ); }
+.bg-fade50    { background-color: rgba( 85, 85, 85, .5 ); }
+.bg-fade40    { background-color: rgba( 85, 85, 85, .4 ); }
+.bg-fade30    { background-color: rgba( 85, 85, 85, .3 ); }
+.bg-fade20    { background-color: rgba( 85, 85, 85, .2 ); }
+.bg-fade10    { background-color: rgba( 85, 85, 85, .1 ); }
 
-/* border */
-.br0 { border-radius: 0; }
-.br1 { border-radius: .125rem; }
-.br2 { border-radius: .25rem; }
-.br3 { border-radius: .5rem; }
-.br4 { border-radius: 1rem; }
-.br-100 { border-radius: 100%; }
-.br-pill { border-radius: 9999px; }
-.br-bottom { border-top-left-radius: 0; border-top-right-radius: 0; }
-.br-top { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
-.br-right { border-top-left-radius: 0; border-bottom-left-radius: 0; }
-.br-left { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+/* border-radius */
+.br0          { border-radius: 0; }
+.br1          { border-radius: .125rem; }
+.br2          { border-radius: .25rem; }
+.br3          { border-radius: .5rem; }
+.br4          { border-radius: 1rem; }
+.br-100       { border-radius: 100%; }
+.br-pill      { border-radius: 9999px; }
+.br-bottom    { border-top-left-radius: 0; border-top-right-radius: 0; }
+.br-top       { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.br-right     { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+.br-left      { border-top-right-radius: 0; border-bottom-right-radius: 0; }
 
 /* border-collapse */
 .border-collapse   { border-collapse: collapse; border-spacing: 0; }
@@ -141,7 +150,7 @@ display: inline-flex;
 */
 
 .flex            { display: flex; }
-.self-center { align-self: center; }
+.self-center     { align-self: center; }
 
 /*
 flex
@@ -199,11 +208,11 @@ flex-wrap
 .h4 { height: 8rem; }
 .h5 { height: 16rem; }
 /* Height Percentages - Based off of height of parent */
-.h-25 { height: 25%; }
-.h-50 { height: 50%; }
-.h-75 { height: 75%; }
-.h-100 { height: 100%; }
-.min-h-100 { min-height: 100%; }
+.h25 { height: 25%; }
+.h50 { height: 50%; }
+.h75 { height: 75%; }
+.h100 { height: 100%; }
+.minh100 { min-height: 100%; }
 /* Screen Height Percentage */
 .vh-25 { height: 25vh; }
 .vh-50 { height: 50vh; }
@@ -318,6 +327,19 @@ list-style-type: decimal;
 
 /* min-width */
 
+/* opacity */
+.o100 { opacity: 1; }
+.o90 { opacity: .9; }
+.o80 { opacity: .8; }
+.o70 { opacity: .7; }
+.o60 { opacity: .6; }
+.o50 { opacity: .5; }
+.o40 { opacity: .4; }
+.o30 { opacity: .3; }
+.o20 { opacity: .2; }
+.o10 { opacity: .1; }
+.o0 { opacity: 0; }
+
 /* overflow */
 .overflow-visible { overflow: visible; }
 .overflow-hidden { overflow: hidden; }
@@ -417,12 +439,13 @@ list-style-type: decimal;
 .ttu { text-transform: uppercase; }
 .ttn { text-transform: none; }
 
-/* link */
-.tdn { text-decoration: none; }
-.tdn:link, .tdn:visited { text-decoration: none; }
-.tdn:hover { text-decoration: none; }
-.tdn:active { text-decoration: none; }
-.tdnde:focus { text-decoration: none; }
+/* text-decoration */
+.tdn                      { text-decoration: none; }
+.tdn:link, .tdn:visited   { text-decoration: none; }
+.tdn:hover                { text-decoration: none; }
+.tdn:active               { text-decoration: none; }
+.tdn:focus                { text-decoration: none; }
+.tdu                      { text-decoration: underline; }
 
 /* vertical-align */
 .v-base { vertical-align: baseline; }
