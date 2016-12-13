@@ -123,14 +123,14 @@
 .cn { clear: none; }
 
 /* color */
-.white         { color: #FFFFFF; }
-.black         { color: #000000; }
-.dark-grey     { color: #333333; }
-.grey          { color: #999999; }
-.blue          { color: #4990E2; }
+.white          { color: #FFFFFF; }
+.black          { color: #000000; }
+.dark-grey      { color: #333333; }
+.grey           { color: #999999; }
+.blue           { color: #4990E2; }
 .red            { color: #D0011B; }
-.green       { color: #7ED321; }
-.orange       { color: #F6A623; }
+.green          { color: #7ED321; }
+.orange         { color: #F6A623; }
 
 /* cursor */
 .pointer         { cursor: pointer;  }
