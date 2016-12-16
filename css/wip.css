@@ -7,6 +7,7 @@
 .bg-blue      { background-color: #4990E2; }
 .bg-red       { background-color: #D0011B; }
 .bg-green     { background-color: #7ED321; }
+.bg-white     { background-color: #FFFFFF; }
 
 /*  background-images */
 .bg-center    { background-repeat: no-repeat; background-position: center center; }
@@ -483,4 +484,4 @@ list-style-type: decimal;
 
 /* misc */
 .font-antialiased { -webkit-font-smoothing: antialiased; }
-
+.button-press:active     { padding-top: 1px; }
