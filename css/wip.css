@@ -131,6 +131,7 @@
 .red            { color: #D0011B; }
 .green          { color: #7ED321; }
 .orange         { color: #F6A623; }
+.yellow         { color: #FFEF00; }
 
 /* cursor */
 .pointer         { cursor: pointer;  }
@@ -176,6 +177,7 @@ flex-wrap
 .system-font  { font-family: -apple-system, 'avenir next', sans-serif; }
 
 /* font-size */
+.fstiny {font-size: .7rem; }
 .fs1 { font-size: .875rem; }
 .fs2 { font-size: 1rem; }
 .fs3 { font-size: 1.25rem; }
