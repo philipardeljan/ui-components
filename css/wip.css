@@ -136,16 +136,16 @@
 
 /* cursor */
 .pointer         { cursor: pointer;  }
-.not-allowed  { cursor: not-allowed; }
+.not-allowed     { cursor: not-allowed; }
             
 /* display */
-.dn            { display: none; }
+.dn             { display: none; }
 .di             { display: inline; }
-.db            { display: block; }
-.dib           { display: inline-block; }
+.db             { display: block; }
+.dib            { display: inline-block; }
 .dt             { display: table; }
-.dtrow       { display: table-row; }
-.dtcell        { display: table-cell; }
+.dtrow          { display: table-row; }
+.dtcell         { display: table-cell; }
 
 /* display: flex;
 display: inline-flex;
@@ -171,24 +171,24 @@ flex-wrap
 
 /* font-family */
 .serif              { font-family: serif; }
-.sans-serif     { font-family: sans-serif; }
-.monospace  { font-family: monospace; }
-.cursive         { font-family: cursive; }
-.avenir           { font-family: 'Avenir Next'; }
-.system-font  { font-family: -apple-system, 'avenir next', sans-serif; }
+.sans-serif         { font-family: sans-serif; }
+.monospace          { font-family: monospace; }
+.cursive            { font-family: cursive; }
+.avenir             { font-family: 'Avenir Next'; }
+.system-font        { font-family: -apple-system, 'avenir next', sans-serif; }
 
 /* font-size */
 .fstiny {font-size: .7rem; }
-.fs1 { font-size: .875rem; }
-.fs2 { font-size: 1rem; }
-.fs3 { font-size: 1.25rem; }
-.fs4 { font-size: 1.5rem; }
-.fs5 { font-size: 1.75rem; }
-.fs6 { font-size: 2rem; }
-.fs7 { font-size: 2.25rem; }
-.fs8 { font-size: 2.5rem; }
-.fs9 { font-size: 2.75rem; }
-.fs10 { font-size: 3rem; }
+.fs1    { font-size: .875rem; }
+.fs2    { font-size: 1rem; }
+.fs3    { font-size: 1.25rem; }
+.fs4    { font-size: 1.5rem; }
+.fs5    { font-size: 1.75rem; }
+.fs6    { font-size: 2rem; }
+.fs7    { font-size: 2.25rem; }
+.fs8    { font-size: 2.5rem; }
+.fs9    { font-size: 2.75rem; }
+.fs10   { font-size: 3rem; }
 
 /* font-style */
 .italic { font-style: italic; }
@@ -480,8 +480,6 @@ list-style-type: decimal;
 /* z-index */
 
 
-
-
 /* misc */
-.font-antialiased { -webkit-font-smoothing: antialiased; }
-.button-press:active     { padding-top: 1px; }
+.font-antialiased        { -webkit-font-smoothing: antialiased; }
+.button-press:active     { top: 2px; position: relative; }
