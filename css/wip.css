@@ -6,7 +6,8 @@
 .bg-silver    { background-color: #EEEEEE; }
 .bg-blue      { background-color: #4990E2; }
 .bg-red       { background-color: #D0011B; }
-.bg-green     { background-color: #7ED321; }
+.bg-orange    { background-color: #F6A623; }
+.bg-green     { background-color: #6FC214; }
 .bg-white     { background-color: #FFFFFF; }
 
 /*  background-images */
@@ -42,10 +43,12 @@
 /* border-color */
 .border-black    { border-color: #000000; }
 .border-grey     { border-color: #999999; }
+.border-silver   { border-color: #CCCCCC; }
 .border-blue     { border-color: #4990E2; }
 .border-red      { border-color: #D0011B; }
-.border-green    { border-color: #7ED321; }
-
+.border-orange   { border-color: #F6A623; }
+.border-green    { border-color: #6FC214; }
+.border-white    { border-color: #FFFFFF; }
 
 /* border-style */
 .ba { border-style: solid; border-width: 1px; }
@@ -62,9 +65,11 @@
 .bw3 { border-width: .5rem; }
 .bw4 { border-width: 1rem; }
 .bw5 { border-width: 2rem; }
+.bw5 { border-width: 4rem; }
+.bw6 { border-width: 6rem; }
 
 /* box-shadow */
-.shadow { box-shadow: 0 2px 2px rgba( 0, 0, 0, .2 ); }
+.shadow { box-shadow: 0 1px 2px 2px rgba( 0, 0, 0, .1 ); }
 
 /* top */
 .top0 { top: 0; }
@@ -152,6 +157,9 @@ display: inline-flex;
 */
 
 .flex            { display: flex; }
+.justify-center  { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.items-end       { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+.inline-flex     { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
 .self-center     { align-self: center; }
 
 /*
@@ -233,6 +241,7 @@ list-style-type: circle;
 list-style-type: square;
 list-style-type: decimal;
 */
+.list-none { list-style-type: none; }
 
 /* margin */
 .center { margin-right: auto; margin-left: auto; }
@@ -426,10 +435,7 @@ list-style-type: decimal;
 .tc   { text-align: center; }
 
 /* text-transform */
-.ttc  { text-transform: capitalize; }
-.ttl  { text-transform: lowercase; }
 .ttu  { text-transform: uppercase; }
-.ttn  { text-transform: none; }
 
 /* text-decoration */
 .tdn                      { text-decoration: none; }
@@ -450,9 +456,7 @@ list-style-type: decimal;
 .hidden     { visibility: hidden; }
 
 /* white-space */
-.ws-normal { white-space: normal; }
 .ws-nowrap { white-space: nowrap; }
-.ws-pre    { white-space: pre; }
 
 /* width */
 .w1            { width: 1rem; }
@@ -482,4 +486,4 @@ list-style-type: decimal;
 
 /* misc */
 .font-antialiased        { -webkit-font-smoothing: antialiased; }
-.button-press:active     { top: 2px; position: relative; }
+.button-press:active     { position: relative; top: 2px; }
