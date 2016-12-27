@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>Pills - UI Components</title>
+    <title>Pagination - UI Components</title>
     <meta name="author" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,33 +12,30 @@
 
   <body class="ma0">
     <div class="pv4">
-      <h1 class="fs6 fw400 sans-serif ml4 mv0">Pills</h1>
+      <h1 class="fs6 fw400 sans-serif ml4 mv0">Pagination</h1>
       <div class="sans-serif ml4">
         <p class="mt2 mb0">Many words here for your enjoyment.</p>
       </div>
     </div>
     <div class="font-antialiased pt4 pb5 bt bb border-grey cf">
       <div class="fl ml4">
-        <p class="sans-serif fs2">Block style</p>
-      <p class="fs2 dib tc center sans-serif bg-grey br-pill pv2 ph3 mh1 white pointer">
-        Open
-        <span class="fs1">7</span>
-      </p>
-      <p class="fs2 dib tc center sans-serif bg-blue br-pill pv2 ph3 mh1 white pointer">
-        Static
-        <span class="fs1">3</span>
-      </p>
-      <p class="fs2 dib tc center sans-serif bg-red br-pill pv2 ph3 mh1 white pointer">
-        Expired
-        <span class="fs1">12</span>
-      </p>
-      <p class="fs2 dib tc center sans-serif bg-green br-pill pv2 ph3 mh1 white pointer">
-        Active
-        <span class="fs1">6</span>
-      </p>
+        <p class="sans-serif fs2">Standard pagination</p>
+        <nav class="dt sans-serif border-collapse">
+          <a href="#" class="dtcell ba border-grey tdn blue pointer pa2 ph3">
+            <span>&laquo;</span>
+          </a>
+          <a href="#" class="dtcell ba border-grey tdn blue pointer pv2 ph3">1</a>
+          <a href="#" class="dtcell ba border-grey tdn blue pointer pa2 ph3">2</a>
+          <a href="#" class="dtcell ba border-grey tdn blue pointer pa2 ph3">3</a>
+          <a href="#" class="dtcell ba border-grey tdn blue pointer pa2 ph3">4</a>
+          <a href="#" class="dtcell ba border-grey tdn blue pointer pa2 ph3">5</a>
+          <a href="#" class="dtcell ba border-grey tdn blue pointer pa2 ph3">
+            <span>&raquo;</span>
+          </a>
+        </nav>
       </div>
       <div class="fl ml4">
-        <p class="sans-serif fs2">Code (for all four pills)</p>
+        <p class="sans-serif fs2">Code</p>
         <div class="bg-black white mr4 ph4 pv2 mw6 overflow-x-scroll">
           <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw5 ba br1 border-blue"</span>&gt;
   &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
@@ -52,28 +49,23 @@
     </div>
     <div class="font-antialiased pt4 pb5 bb border-grey cf">
       <div class="fl ml4">
-        <p class="sans-serif fs2">Line style</p>
-        <div class="pt4 tc">
-      <p class="fs2 dib tc center sans-serif br-pill pv2 ph3 mh1 black ba border-black pointer">
-        Open
-        <span class="fs1">7</span>
-      </p>
-      <p class="fs2 dib tc center sans-serif br-pill pv2 ph3 mh1 blue ba border-blue pointer">
-        Static
-        <span class="fs1">3</span>
-      </p>
-      <p class="fs2 dib tc center sans-serif br-pill pv2 ph3 mh1 red ba border-red pointer">
-        Expired
-        <span class="fs1">12</span>
-      </p>
-      <p class="fs2 dib tc center sans-serif br-pill pv2 ph3 mh1 green ba border-green pointer">
-        Active
-        <span class="fs1">6</span>
-      </p>
-    </div>
+        <p class="sans-serif fs2">Active page</p>
+        <nav class="dt sans-serif border-collapse">
+          <a href="#" class="dtcell ba border-grey tdn blue pointer pa2 ph3">
+            <span>&laquo;</span>
+          </a>
+          <a href="#" class="dtcell ba border-grey tdn blue pointer pv2 ph3">1</a>
+          <a href="#" class="dtcell ba border-blue tdn bg-blue white pointer pa2 ph3">2</a>
+          <a href="#" class="dtcell ba border-grey tdn blue pointer pa2 ph3">3</a>
+          <a href="#" class="dtcell ba border-grey tdn blue pointer pa2 ph3">4</a>
+          <a href="#" class="dtcell ba border-grey tdn blue pointer pa2 ph3">5</a>
+          <a href="#" class="dtcell ba border-grey tdn blue pointer pa2 ph3">
+            <span>&raquo;</span>
+          </a>
+        </nav>
       </div>
       <div class="fl ml4">
-        <p class="sans-serif fs2">Code (for all four pills)</p>
+        <p class="sans-serif fs2">Code</p>
         <div class="bg-black white mr4 ph4 pv2 mw6 overflow-x-scroll">
           <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw5 ba br1 border-blue"</span>&gt;
   &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
@@ -87,20 +79,14 @@
     </div>
     <div class="font-antialiased pt4 pb5 bb border-grey cf">
       <div class="fl ml4">
-        <p class="sans-serif fs2">Border radius half</p>
-        <div class="pt4 tc">
-      <p class="fs2 dib tc center button-press sans-serif br-pill pv2 ph3 mh1 blue br-left ba border-blue pointer">
-        Open
-        <span class="fs1">7</span>
-      </p>
-      <p class="fs2 dib tc center button-press sans-serif br-pill pv2 ph3 mh1 red br-right ba border-red pointer">
-        Closed
-        <span class="fs1">3</span>
-      </p>
-    </div>
+        <p class="sans-serif fs2">Next/previous control</p>
+        <nav class="sans-serif pt2">
+          <a href="#" class="ba border-grey br-pill tdn blue pointer button-press pa2 ph3">Previous</a>
+          <a href="#" class="ba border-grey br-pill tdn blue pointer button-press pa2 ph3">Next</a>
+        </nav>
       </div>
       <div class="fl ml4">
-        <p class="sans-serif fs2">Code (for all four pills)</p>
+        <p class="sans-serif fs2">Code</p>
         <div class="bg-black white mr4 ph4 pv2 mw6 overflow-x-scroll">
           <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw5 ba br1 border-blue"</span>&gt;
   &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
