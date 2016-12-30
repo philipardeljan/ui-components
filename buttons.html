@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
 
   <body class="ma0">
     <div class="pv4">
-      <h1 class="fs6 fw400 sans-serif ml4 mv0">Buttons</h1>
+      <h1 class="fs6 fw400 system-font ml4 mv0">Buttons</h1>
       <div class="sans-serif ml4">
         <p class="mt2 mb0">Many words here for your enjoyment.</p>
       </div>
@@ -22,21 +22,21 @@
         <p class="sans-serif fs2">Solid background colour</p>
         <div class="fl mr3 mb3">
           <button class="fs2 flex sans-serif bg-blue br2 border-blue bw0 shadow white pointer button-press ph3">
-            <p class="self-center mv2 pv1">Login</p>
+            <p class="self-center mv2 pv1">Register</p>
           </button>
         </div>
         <div class="mb3">
           <button class="fs2 flex sans-serif bg-green br2 border-green bw0 shadow white pointer button-press ph3">
-            <p class="self-center mv2 pv1">Login</p>
+            <p class="self-center mv2 pv1">Register</p>
           </button>
         </div>
         <div class="fl mr3">
           <button class="fs2 flex sans-serif bg-red br2 border-red bw0 shadow white pointer button-press ph3">
-            <p class="self-center mv2 pv1">Login</p>
+            <p class="self-center mv2 pv1">Register</p>
           </button>
         </div>
           <button class="fs2 flex sans-serif bg-orange br2 border-orange bw0 shadow white pointer button-press ph3">
-            <p class="self-center mv2 pv1">Login</p>
+            <p class="self-center mv2 pv1">Register</p>
           </button>
       </div>
       <div class="fl ml4">
@@ -54,9 +54,29 @@
     </div>
     <div class="font-antialiased pt4 pb5 bb border-grey cf">
       <div class="fl ml4">
-        <p class="sans-serif fs2">Shadow, no border lines</p>
-          <button class="fs2 flex sans-serif bg-white bn shadow pointer button-press ph3">
-            <p class="self-center mv2 pv1">Login</p>
+        <p class="sans-serif fs2">Plain, no shadow</p>
+          <button class="fs2 flex sans-serif bg-white ba br3 pointer button-press ph3">
+            <p class="self-center mv2 pv1">Register</p>
+          </button>
+      </div>
+      <div class="fl ml4">
+        <p class="sans-serif fs2">Code</p>
+        <div class="bg-black white mr4 ph4 pv2 mw13 overflow-x-scroll">
+          <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw5 ba br1 border-blue"</span>&gt;
+  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
+    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2 dark-grey mt0 mh0 mb2"</span>&gt;Rising sea levels is causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
+    &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
+  &lt;/<span class="blue">div</span>&gt;
+&lt;/<span class="blue">div</span>&gt;</pre>
+        </div>
+      </div>
+    </div>
+    <div class="font-antialiased pt4 pb5 bb border-grey cf">
+      <div class="fl ml4">
+        <p class="sans-serif fs2">Not allowed</p>
+          <button class="fs2 flex sans-serif bg-silver white ba border-grey br3 not-allowed shake ph3">
+            <p class="self-center dark-grey mv2 pv1">Register</p>
           </button>
       </div>
       <div class="fl ml4">
@@ -120,9 +140,9 @@
     </div>
     <div class="font-antialiased pt4 pb5 bb border-grey cf">
       <div class="fl ml4">
-        <p class="sans-serif fs2">With SVG spinner (no IE support)</p>
+        <p class="sans-serif fs2">With SVG spinner (no IE or Edge support)</p>
           <button class="fs2 flex sans-serif bg-blue border-blue br2 bw0 shadow ph4 mb3 white button-press pointer">
-            <svg width='20px' height='50px' viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><rect x="0" y="0" width="100" height="100" fill="none"></rect><circle cx="50" cy="50" r="47" stroke-dasharray="191.95131113433638 103.3583983031042" stroke="#ffffff" fill="none" stroke-width="8"><animateTransform attributeName="transform" type="rotate" values="0 50 50;180 50 50;360 50 50;" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite" begin="0s"></animateTransform></circle></svg>
+            <svg width='18px' height='50px' viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><rect x="0" y="0" width="100" height="100" fill="none"></rect><circle cx="50" cy="50" r="47" stroke-dasharray="191.95131113433638 103.3583983031042" stroke="#ffffff" fill="none" stroke-width="8"><animateTransform attributeName="transform" type="rotate" values="0 50 50;180 50 50;360 50 50;" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite" begin="0s"></animateTransform></circle></svg>
           </button>
       </div>
       <div class="fl ml4">
@@ -141,8 +161,8 @@
     <div class="font-antialiased pt4 pb5 bb border-grey cf">
       <div class="fl ml4">
         <p class="sans-serif fs2">With GIF spinner (all browsers A-OK)</p>
-          <button class="fs2 flex sans-serif bg-blue border-blue br2 bw0 shadow ph4 white button-press pointer">
-            <img class="w-40 pv3 center" src="images/spinner.gif" />
+          <button class="fs2 flex sans-serif bg-blue border-blue br2 bw0 shadow pv1 ph4 white button-press pointer">
+            <img class="w1 pv3 ph1" src="images/spinner.gif" />
           </button>
       </div>
       <div class="fl ml4">
@@ -163,27 +183,27 @@
         <p class="sans-serif fs2">Different font sizes</p>
         <div class="mb3">
           <button class="fs1 flex sans-serif bg-blue br2 border-blue bw0 shadow white pointer button-press ph3">
-            <p class="self-center mv2 pv1">Login</p>
+            <p class="self-center mv2 pv1">Register</p>
           </button>
         </div>
         <div class="mb3">
           <button class="fs2 flex sans-serif bg-green br2 border-green bw0 shadow white pointer button-press ph3">
-            <p class="self-center mv2 pv1">Login</p>
+            <p class="self-center mv2 pv1">Register</p>
           </button>
         </div>
         <div class="mb3">
           <button class="fs3 flex sans-serif bg-red br2 border-red bw0 shadow white pointer button-press ph3">
-            <p class="self-center mv2 pv1">Login</p>
+            <p class="self-center mv2 pv1">Register</p>
           </button>
         </div>
         <div class="mb3">
           <button class="fs4 flex sans-serif bg-orange br2 border-orange bw0 shadow white pointer button-press ph3">
-            <p class="self-center mv2 pv1">Login</p>
+            <p class="self-center mv2 pv1">Register</p>
           </button>
         </div>
         <div class="mb3">
           <button class="fs5 flex sans-serif bg-grey br2 border-grey bw0 shadow white pointer button-press ph3">
-            <p class="self-center mv2 pv1">Login</p>
+            <p class="self-center mv2 pv1">Register</p>
           </button>
         </div>
       </div>
@@ -205,22 +225,22 @@
         <p class="sans-serif fs2">Different horizontal padding</p>
         <div class="mb3">
           <button class="fs1 flex sans-serif bg-blue br2 border-blue bw0 shadow white pointer button-press ph2">
-            <p class="self-center mv2 pv1">Login</p>
+            <p class="self-center mv2 pv1">Register</p>
           </button>
         </div>
         <div class="mb3">
           <button class="fs1 flex sans-serif bg-green br2 border-green bw0 shadow white pointer button-press ph3">
-            <p class="self-center mv2 pv1">Login</p>
+            <p class="self-center mv2 pv1">Register</p>
           </button>
         </div>
         <div class="mb3">
           <button class="fs1 flex sans-serif bg-red br2 border-red bw0 shadow white pointer button-press ph4">
-            <p class="self-center mv2 pv1">Login</p>
+            <p class="self-center mv2 pv1">Register</p>
           </button>
         </div>
         <div class="mb3">
           <button class="fs1 flex sans-serif bg-orange br2 border-orange bw0 shadow white pointer button-press ph5">
-            <p class="self-center mv2 pv1">Login</p>
+            <p class="self-center mv2 pv1">Register</p>
           </button>
         </div>
       </div>
@@ -241,7 +261,7 @@
       <div class="fl ml4">
         <p class="sans-serif fs2">Button group</p>
           <button class="fs2 sans-serif bg-blue br2 border-blue bw0 shadow white pointer button-press ph3">
-            <p class="mv2 pv1">Login</p>
+            <p class="mv2 pv1">Register</p>
           </button>
           <a href="#" class="di sans-serif tdn blue pointer button-press ml2">or sign up</a>
         </div>
