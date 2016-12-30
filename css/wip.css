@@ -307,6 +307,8 @@
 /* min-height */
 
 /* min-width */
+.min-width-1  { min-width: 1rem; }
+.min-width-2  { min-width: 1.5rem; }
 
 /* overflow */
 .overflow-visible     { overflow: visible; }
@@ -454,4 +456,3 @@
 @keyframes shake { from, to { transform: translate3d(0, 0, 0); } 20%, 60% { transform: translate3d(-5px, 0, 0); } 40%, 80% { transform: translate3d(5px, 0, 0); } }
 .hover-bg-grey-grow:hover  { background-color: #DDDDDD; transition: 200ms ease-out; transform: scale(1.2); }
 .hover-bg-grey:hover { background-color: #DDDDDD; transition: 200ms ease-out; }
- 
