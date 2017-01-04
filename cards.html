@@ -12,7 +12,19 @@
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script>
       $(function($) {
-      $("#card").flip();
+      $("#card").flip({
+      trigger: 'manual',
+      });
+      });
+
+      $(function($) {
+      $("#toggle-btn").click(function(){
+      $("#card").flip(true);
+      });
+
+      $("#toggle-btn2").click(function(){
+      $("#card").flip(false);
+      });
       });
     </script>
   </head>
@@ -26,42 +38,45 @@
     </div>
     <div id="card">
       <div class="bt bb border-grey">
-           <div class="front">
-             <div class="font-antialiased pt4 pb5 cf">
-               <div class="sans-serif fs2">
-                 <p class="tc fs3 mv0">Simple border</p>
-               </div>
-               <div class="flex justify-center mt4">
-                 <div class="sans-serif db pb2 mw11 ba br1 border-grey">
-                   <div class="pa3">
-                     <p class="fs5 pb2 mt2 mb0">Sea ice disaster</p>
-                     <p class="fs2 lh-body mt0 mh0 mb2">Rising sea levels are causing much anguish in the scientific community.</p>
-                     <a href="#" class="tdn blue">Read more</a>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-           <div class="back mv2">
-             <div class="font-antialiased pt4 pb5 cf">
-               <div class="sans-serif fs2">
-                 <p class="tc fs3 mv0">Code</p>
-               </div>
-               <div class="flex justify-center mt4">
-                 <div class="sans-serif bg-black white mr4 ph4 pv2 mw13 overflow-x-scroll">
-                   &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"</span>&gt;
-                   &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
-                   &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
-                   &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2  mt0 mh0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
-                   &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
-                   &lt;/<span class="blue">div</span>&gt;
-                   &lt;/<span class="blue">div</span>&gt;
-                 </div>
-               </div>
-             </div>
-           </div>
+        <div class="front">
+          <div class="font-antialiased pt4">
+            <div class="sans-serif fs2">
+              <p class="tc fs3 mv0">Simple border</p>
+            </div>
+            <button class="fs2 flex sans-serif bg-blue br2 border-blue bw0 white pointer button-press center db mv3 pa2" id="toggle-btn">View code</button>
+            <div class="flex justify-center mt3 pt2">
+              <div class="sans-serif db pb2 mw11 ba br1 border-grey">
+                <div class="pa3">
+                  <p class="fs5 pb2 mt2 mb0">Sea ice disaster</p>
+                  <p class="fs2 lh-body mt0 mh0 mb2">Rising sea levels are causing much anguish in the scientific community.</p>
+                  <a href="#" class="tdn blue">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="back">
+          <div class="font-antialiased pt4">
+            <div class="sans-serif fs2">
+              <p class="tc fs3 mv0">Code</p>
+            </div>
+            <button class="fs2 sans-serif center db bg-blue br2 border-blue bw0 white pointer button-press center db mv3 pa2" id="toggle-btn2">View UI</button>
+            <div class="flex justify-center mt4">
+              <pre class="ma0"><div class="sans-serif bg-black white mr4 ph4 mw13 overflow-x-scroll">
+                  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"</span>&gt;
+                    &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
+                      &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+                      &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2  mt0 mh0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
+                      &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
+                    &lt;/<span class="blue">div</span>&gt;
+                  &lt;/<span class="blue">div</span>&gt;
+                </div>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
 </div>
 <div class="font-antialiased pt4 pb5 bb border-grey cf">
   <div class="fl ml4">
@@ -330,8 +345,8 @@
     <p class="sans-serif fs2">Profile with detail</p>
     <div class="sans-serif mw12 tc ba border-grey">
       <p class="tl fs1 dark-grey mt2 ml2"><a href="#" class="blue tdn pointer">Software</a> > <a href="#" class="blue tdn pointer">C/C++, Java and MYSQL</a></p>
-<img class="self-center w4 h4 br-100 ba border-grey mt3" src="images/profile.png"/>
-<p class="self-center fs4 mb0">Xiuying Li</pt2>
+      <img class="self-center w4 h4 br-100 ba border-grey mt3" src="images/profile.png"/>
+      <p class="self-center fs4 mb0">Xiuying Li</pt2>
 <p class="self-center fs1 dark-grey mt1 mb4 fs1 dark-grey mv0">Nanjing, China</p>
 <p class="mt3 mb3">Freelance software engineer</p>
 <button class="fs2 sans-serif bg-blue border-blue br2 bw0 pv2 ph3 mh1 mb3 button-press white pointer">Hire Xiuying</button>
