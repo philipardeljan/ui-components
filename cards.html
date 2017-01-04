@@ -1,685 +1,709 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <title>Cards - UI Components</title>
-        <meta name="author" content="">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/wip.css">
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Cards - UI Components</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/wip.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script>
+      $(function($) {
+      $("#card").flip();
+      });
+    </script>
+  </head>
 
-    <body class="ma0">
-        <div class="pv4 tc">
-            <h1 class="fs6 fw400 sans-serif mv0">Cards</h1>
-            <div class="sans-serif">
-                <p class="mt2 mb0">You shoud probably donate to Wikipedia.</p>
-            </div>
-        </div>
+  <body class="ma0">
+    <div class="pv4 tc">
+      <h1 class="fs6 fw400 sans-serif mv0">Cards</h1>
+      <div class="sans-serif">
+        <p class="mt2 mb0">You shoud probably donate to Wikipedia.</p>
+      </div>
+    </div>
+    <div id="card">
+      <div class="front">
         <div class="font-antialiased pt4 pb5 bt bb border-grey cf">
-            <div class="sans-serif fs2">
-                    <p class="tc fs3 mv0 pb3">Simple border</p>
-                    <div class="flex justify-center">
-                        <a href="#" class="bg-blue white tdn pointer mh2 pa2">UI example</a>
-                        <a href="#" class="blue tdn pointer mh2 pa2">HTML Code</a>
-                    </div>
-            </div>                
-            <div class="flex justify-center mt4">
-                <div class="sans-serif db pb2 mw11 ba br1 border-grey">
-                    <div class="pa3">
-                        <p class="fs5 pb2 mt2 mb0">Sea ice disaster</p>
-                        <p class="fs2 lh-body mt0 mh0 mb2">Rising sea levels are causing much anguish in the scientific community.</p>
-                        <a href="#" class="tdn blue">Read more</a>
-                    </div>
-                </div>
+          <div class="sans-serif fs2">
+            <p class="tc fs3 mv0">Simple border</p>
+          </div>
+          <div data-target="simple-border-code" class="flex justify-center mt4">
+            <div class="sans-serif db pb2 mw11 ba br1 border-grey">
+              <div class="pa3">
+                <p class="fs5 pb2 mt2 mb0">Sea ice disaster</p>
+                <p class="fs2 lh-body mt0 mh0 mb2">Rising sea levels are causing much anguish in the scientific community.</p>
+                <a href="#" class="tdn blue">Read more</a>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2 mb3">Simple shadow</p>
-                <div class="sans-serif db pb2 mw11 shadow">
-                    <div class="pa3">
-                        <p class="fs5 pb2 mt2 mb0">Sea ice disaster</p>
-                        <p class="fs2 lh-body mt0 mh0 mb2">Rising sea levels are causing much anguish in the scientific community.</p>
-                        <a href="#" class="tdn blue">Read more</a>
-                    </div>
-                </div>
+      </div>
+      <div class="back">
+        <div class="font-antialiased pt4 pb5 bt bb border-grey cf">
+          <div class="sans-serif fs2">
+            <p class="tc fs3 mv0">Code</p>
+          </div>
+            <div class="sans-serif bg-black white mr4 ph4 pv2 mw13 overflow-x-scroll">
+              &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"</span>&gt;
+              &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
+              &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+              &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2  mt0 mh0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
+              &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
+              &lt;/<span class="blue">div</span>&gt;
+              &lt;/<span class="blue">div</span>&gt;
             </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-black white mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"</span>&gt;
-  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2  mt0 mh0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
-  &lt;/<span class="blue">div</span>&gt;
-&lt;/<span class="blue">div</span>&gt;</pre>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2 mb3">No content</p>
-                <div class="sans-serif db pb2 mw11 shadow">
-                    <div class="pt6 pb4 ph7"></div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-black white mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"</span>&gt;
-  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2  mt0 mh0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
-  &lt;/<span class="blue">div</span>&gt;
-&lt;/<span class="blue">div</span>&gt;</pre>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="font-antialiased pt4 pb5 bb border-grey cf">
+      <div class="fl ml4">
+        <p class="sans-serif fs2 mb3">Simple shadow</p>
+        <div class="sans-serif db pb2 mw11 shadow">
+          <div class="pa3">
+            <p class="fs5 pb2 mt2 mb0">Sea ice disaster</p>
+            <p class="fs2 lh-body mt0 mh0 mb2">Rising sea levels are causing much anguish in the scientific community.</p>
+            <a href="#" class="tdn blue">Read more</a>
+          </div>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Top border</p>
-                <div class="sans-serif db pb2 mw11 ba br1 border-blue">
-                    <div class="bt bw4 border-blue br1 pa3">
-                        <p class="fs5 pb2 mt2 mb0">Sea ice disaster</p>
-                        <p class="fs2 lh-body pb1 mt0 mh0 mb2">Rising sea levels are causing much anguish in the scientific community.</p>
-                        <a href="#" class="tdn blue">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-black white mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"</span>&gt;
-  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2 dark-grey mt0 mh0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
-  &lt;/<span class="blue">div</span>&gt;
-&lt;/<span class="blue">div</span>&gt;</pre>
-                </div>
-            </div>
+      </div>
+      <div class="fl ml4">
+        <p id="simple-border-code" class="sans-serif fs2">Code</p>
+        <div class="bg-black white mr4 ph4 pv2 mw13 overflow-x-scroll">
+          <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"</span>&gt;
+            &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
+            &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+            &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2  mt0 mh0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
+            &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
+            &lt;/<span class="blue">div</span>&gt;
+            &lt;/<span class="blue">div</span>&gt;</pre>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Top image</p>
-                <div class="sans-serif db pb2 mw11 ba br1 border-grey">
-                    <img class="w-100 bb border-grey" src="images/sea-ice.jpg" />
-                    <div class="pa3">
-                        <p class="fs5 pb2 mt0 mb0">Sea ice disaster</p>
-                        <p class="fs2 lh-body pb1 mt0 mh0 mb2">Rising sea levels are causing much anguish in the scientific community.</p>
-                        <a href="#" class="tdn blue">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>
-&lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
-  &lt;div class="bt bw4 border-blue br1 pa2"&gt;
-    &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
-    &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
-    &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-                    </pre>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="font-antialiased pt4 pb5 bb border-grey cf">
+      <div class="fl ml4">
+        <p class="sans-serif fs2 mb3">No content</p>
+        <div class="sans-serif db pb2 mw11 shadow">
+          <div class="pt6 pb4 ph7"></div>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Top title with image  </p>
-                <div class="sans-serif db pb2 mw11 ba br1 border-grey">
-                    <div class="pv3 flex">
-                        <div class="self-center w2 h2 ml3 bg-blue br-100"></div>
-                        <div>
-                            <p class="self-center fs3 mt1 mb1 ml3">La Luna Bistro</p>
-                            <p class="self-center fs1 dark-grey mv0 ml3 pb1">Carlton 3054 VIC</p>
-                        </div>
-                    </div>
-                    <div class="relative white db">
-                        <img class="w-100 bt bb border-grey" src="images/restaraunt.png" />
-                        <p class="absolute bottom2 left1 fs5 mb0">4.5/5</p>
-                        <p class="absolute bottom0 left1 fs2 mt0">based on 1,958 votes</p>
-                    </div>
-                    <div class="pa3">
-                        <p class="fs2 lh-body pb1 mt0 mh0 mb2">Upmarket Modern European menu served in a rustic-chic space with warm wood accents and black walls.</p>
-                        <a href="#" class="tdn blue">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>
-&lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
-  &lt;div class="bt bw4 border-blue br1 pa2"&gt;
-    &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
-    &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
-    &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-                    </pre>
-                </div>
-            </div>
+      </div>
+      <div class="fl ml4">
+        <p class="sans-serif fs2">Code</p>
+        <div class="bg-black white mr4 ph4 pv2 mw13 overflow-x-scroll">
+          <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"</span>&gt;
+            &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
+            &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+            &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2  mt0 mh0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
+            &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
+            &lt;/<span class="blue">div</span>&gt;
+            &lt;/<span class="blue">div</span>&gt;</pre>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2 mb3">Full bleed image</p>
-                <div class="sans-serif relative db mw11">
-                    <img class="w-100 db" src="images/sea-ice.jpg" />
-                    <div class="absolute bottom0 h100 bg-fade70 mv0 pl3 white">
-                        <p class="fs5 pt3 pb1 mt2 mb0">Sea ice disaster</p>
-                        <p class="fs2 lh-body mt0">The lack of public awareness and involvement is greatly concerning.</p>
-                        <a href="#" class="tdu absolute pointer bottom0 pb3 mb2 white">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-black white mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"</span>&gt;
-  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2 dark-grey mt0 mh0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
-  &lt;/<span class="blue">div</span>&gt;
-&lt;/<span class="blue">div</span>&gt;</pre>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="font-antialiased pt4 pb5 bb border-grey cf">
+      <div class="fl ml4">
+        <p class="sans-serif fs2">Top border</p>
+        <div class="sans-serif db pb2 mw11 ba br1 border-blue">
+          <div class="bt bw4 border-blue br1 pa3">
+            <p class="fs5 pb2 mt2 mb0">Sea ice disaster</p>
+            <p class="fs2 lh-body pb1 mt0 mh0 mb2">Rising sea levels are causing much anguish in the scientific community.</p>
+            <a href="#" class="tdn blue">Read more</a>
+          </div>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Simple profile</p>
-                <div class="sans-serif pv4 ph5 tc ba border-grey br2">
-                    <div class="pt2 pb1">
-                        <div>
-                            <img class="w4 h4 br-100 ba border-grey br1" src="images/profile.png" />
-                            <p class="fs6 mv0">Xiuying Li</pt2>
-                                <p class="fs1 dark-grey mv0">Nanjing, China</p>
-                                <p class="mb0">Software engineer at Alibaba</p>
-                                <p class="fs1 dark-grey mt1">C/C++, Java and MYSQL</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>
-&lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
-  &lt;div class="bt bw4 border-blue br1 pa2"&gt;
-    &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
-    &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
-    &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-                    </pre>
-                </div>
-            </div>
+      </div>
+      <div class="fl ml4">
+        <p class="sans-serif fs2">Code</p>
+        <div class="bg-black white mr4 ph4 pv2 mw13 overflow-x-scroll">
+          <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"</span>&gt;
+            &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
+            &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+            &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2 dark-grey mt0 mh0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
+            &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
+            &lt;/<span class="blue">div</span>&gt;
+            &lt;/<span class="blue">div</span>&gt;</pre>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Media object</p>
-                <div class="sans-serif db pb2 mw11 ba border-grey br1">
-                    <div class="flex">
-                        <div class="w3 h3 bg-grey self-center mt3 ml3"></div>
-                        <div class="self-center pt1 pr5">
-                            <p class="fs3 mt3 mb1 ml3">Sea ice disaster</p>
-                            <p class="fs1 dark-grey mv0 ml3 pb1">Posted two days ago</p>
-                        </div>
-                    </div>
-                    <div class="pt4 mt2 pb3 ml3">
-                        <a href="#" class="tdn blue">Read more</a>
-                        <span>or</span>
-                        <a href="#" class="tdn blue">take action today!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>
-&lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
-  &lt;div class="bt bw4 border-blue br1 pa2"&gt;
-    &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
-    &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
-    &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-                    </pre>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="font-antialiased pt4 pb5 bb border-grey cf">
+      <div class="fl ml4">
+        <p class="sans-serif fs2">Top image</p>
+        <div class="sans-serif db pb2 mw11 ba br1 border-grey">
+          <img class="w-100 bb border-grey" src="images/sea-ice.jpg" />
+          <div class="pa3">
+            <p class="fs5 pb2 mt0 mb0">Sea ice disaster</p>
+            <p class="fs2 lh-body pb1 mt0 mh0 mb2">Rising sea levels are causing much anguish in the scientific community.</p>
+            <a href="#" class="tdn blue">Read more</a>
+          </div>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Media object with list</p>
-                <div class="sans-serif db mw11 ba border-grey br1">
-                    <div class="flex">
-                        <div class="w3 h3 bg-grey self-center mt3 ml3"></div>                        
-                        <div class="self-center pt1 pr5">
-                            <p class="fs3 mt3 mb1 ml3">Sea ice disaster</p>
-                            <p class="fs1 dark-grey mv0 ml3">Posted two days ago</p>
-                        </div>
-                    </div>
-                    <div class="pt3 mt1">
-                        <div class="bt border-grey pv2">
-                            <p class="fs3 mt2 pt1 mb0 pl3">2015/16</p>
-                            <p class="fs1 mt0 pl3 dark-grey">lowest sea ice in history</p>
-                        </div>
-                        <div class="bt bb border-grey bg-silver pv2">
-                            <p class="fs3 mt2 pt1 mb0 pl3">2040</p>
-                            <p class="fs1 mt0 pl3 dark-grey">predicted to have an ice-free Arctic</p>
-                        </div>
-                        <div class="pv2">
-                            <p class="fs3 mt2 pt1 mb0 pl3">2007</p>
-                            <p class="fs1 mt0 pl3 dark-grey">The Northwest Passage opened</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>
-&lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
-  &lt;div class="bt bw4 border-blue br1 pa2"&gt;
-    &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
-    &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
-    &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-                    </pre>
-                </div>
-            </div>
+      </div>
+      <div class="fl ml4">
+        <p class="sans-serif fs2">Code</p>
+        <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
+          <pre>
+            &lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
+            &lt;div class="bt bw4 border-blue br1 pa2"&gt;
+            &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
+            &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
+            &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+          </pre>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Profile with detail</p>
-                <div class="sans-serif mw12 tc ba border-grey">
-                    <p class="tl fs1 dark-grey mt2 ml2"><a href="#" class="blue tdn pointer">Software</a> > <a href="#" class="blue tdn pointer">C/C++, Java and MYSQL</a></p>
-                    <img class="self-center w4 h4 br-100 ba border-grey mt3" src="images/profile.png"/>
-                    <p class="self-center fs4 mb0">Xiuying Li</pt2>
-                        <p class="self-center fs1 dark-grey mt1 mb4 fs1 dark-grey mv0">Nanjing, China</p>
-                        <p class="mt3 mb3">Freelance software engineer</p>
-                        <button class="fs2 sans-serif bg-blue border-blue br2 bw0 pv2 ph3 mh1 mb3 button-press white pointer">Hire Xiuying</button>
-                        <a href="#" class="fs1 db blue tdn pointer mb3 pb1">View previous work</a>
-                        <div class="tc cf bg-silver mw12 mt2 bt border-grey">
-                            <div class="fl w-33">
-                                <p class="dib fs3 mt2 pt1 mb0 mh2">$80.95<span class="fstiny pl1">USD</span></p>
-                                <p class="dib fs1 mt0 mh2">hourly rate</p>
-                            </div>
-                            <div class="fl w-33 br bl border-grey">
-                                <p class="dib fs3 mt2 pt1 mb0 mh2">5/5</p>
-                                <p class="dib fs1 mt0 mh2">700+ ratings</p>
-                            </div>
-                            <div class="fl w-33">
-                                <p class="dib fs3 mt2 pt1 mb0 mh2">17</p>
-                                <p class="dib fs1 mt0 mh2">recommendations</p>
-                            </div>
-                        </div>
-                </div>
+      </div>
+    </div>
+    <div class="font-antialiased pt4 pb5 bb border-grey cf">
+      <div class="fl ml4">
+        <p class="sans-serif fs2">Top title with image  </p>
+        <div class="sans-serif db pb2 mw11 ba br1 border-grey">
+          <div class="pv3 flex">
+            <div class="self-center w2 h2 ml3 bg-blue br-100"></div>
+            <div>
+              <p class="self-center fs3 mt1 mb1 ml3">La Luna Bistro</p>
+              <p class="self-center fs1 dark-grey mv0 ml3 pb1">Carlton 3054 VIC</p>
             </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>
-&lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
-  &lt;div class="bt bw4 border-blue br1 pa2"&gt;
-    &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
-    &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
-    &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-                    </pre>
-                </div>
-            </div>
+          </div>
+          <div class="relative white db">
+            <img class="w-100 bt bb border-grey" src="images/restaraunt.png" />
+            <p class="absolute bottom2 left1 fs5 mb0">4.5/5</p>
+            <p class="absolute bottom0 left1 fs2 mt0">based on 1,958 votes</p>
+          </div>
+          <div class="pa3">
+            <p class="fs2 lh-body pb1 mt0 mh0 mb2">Upmarket Modern European menu served in a rustic-chic space with warm wood accents and black walls.</p>
+            <a href="#" class="tdn blue">Read more</a>
+          </div>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Top image</p>
-                <div class="sans-serif relative pb2 mw11 ba br1 border-grey">
-                    <div class="w-100 bt bw6 border-blue" src="images/restaraunt.png"></div>
-                    <div class="bt border-grey"></div>
-                    <div class="pa3 tc">
-                        <div class="relative right2">
-                            <img class="w3 h3 absolute bottom-1 shadow br-100 ba bw1 border-white" src="images/profile6.png"/>
-                        </div>
-                        <p class="fs5 pb2 mt4 mb0">Jamie Oliver</p>
-                        <p class="fs2 lh-body pb1 mt0 mh3 mb2">James "Jamie" Oliver is a British celebrity chef and restaurateur.</p>
-                        <a href="#" class="tdn blue">Learn more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>
-&lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
-  &lt;div class="bt bw4 border-blue br1 pa2"&gt;
-    &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
-    &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
-    &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-                    </pre>
-                </div>
-            </div>
+      </div>
+      <div class="fl ml4">
+        <p class="sans-serif fs2">Code</p>
+        <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
+          <pre>
+            &lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
+            &lt;div class="bt bw4 border-blue br1 pa2"&gt;
+            &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
+            &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
+            &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+          </pre>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Weather card 1</p>
-                <div class="sans-serif pb2 mw11 ba br4 border-grey">
-                    <img class="w-100 bb br-top br4 border-grey" src="images/melbourne.png" />
-                    <div class="ph3 pb3">
-                        <svg width="100px" height="100px" class="fl w3 h3 ph3" viewBox="0 0 600 600">
-                            <g>
-	                        <path d="M533.6,202.65c1.9-7.7,1.9-13.4,1.9-21c0-53.5-42.1-95.6-95.6-95.6c-36.301,0-66.9,19.1-84.101,47.8 c-11.5-5.7-24.899-9.6-40.2-9.6c-40.2,0-72.7,26.8-82.2,63.1c-13.4-3.8-26.8-5.7-42.1-5.7c-74.6,0-133.9,59.3-133.9,133.9 c0,1.9,0,5.7,0,7.601C23,338.45,0,370.95,0,411.15c0,53.5,42.1,95.6,95.6,95.6h325.1c53.5,0,95.6-42.1,95.6-95.6 c0-21-7.6-42.101-19.1-57.4h19.1c42.101,0,76.5-34.4,76.5-76.5C592.9,240.95,568,210.35,533.6,202.65z M420.8,487.65H95.6 c-42.1,0-76.5-34.4-76.5-76.5c0-36.301,24.9-66.9,59.3-74.601c-1.9-7.7-1.9-13.399-1.9-21c0-63.1,51.6-114.8,114.8-114.8 c44,0,84.1,24.9,103.3,63.1c15.3-15.3,36.3-24.9,59.3-24.9c47.8,0,86.1,38.2,86.1,86.1c0,3.8,0,7.601,0,11.5 c32.5,7.601,57.4,38.2,57.4,74.601C497.2,453.25,462.8,487.65,420.8,487.65z M516.4,334.65h-38.2 c-5.7-3.801-11.5-7.601-19.101-11.5c0-57.4-47.8-103.3-105.199-103.3c-21,0-38.2,5.7-55.5,15.3c-13.4-17.2-28.7-30.6-47.8-40.2 c7.6-30.6,32.5-51.6,65-51.6c19.101,0,38.2,7.7,49.7,21c7.601-34.4,38.2-59.3,74.601-59.3c42.1,0,76.5,34.4,76.5,76.5 c0,13.4-3.801,26.8-9.601,38.2h9.601c32.5,0,57.399,24.9,57.399,57.4C573.8,309.65,548.9,334.65,516.4,334.65z"/>
-                            </g>
-                        </svg>
-                        <p class="fs5 pt1 mt3 mb0">24&deg;</p>
-                        <p class="fs2 mt1 grey">Melbourne, Australia</p>
-                        <p class="fs2 lh-body pt2 pb1 mt3 mh3 mb2">A warm day with northern winds. Chance of any rain: 20%.</p>
-                        <a href="#" class="tdn blue pointer button-press mh3">View extended forecast</a>
-                    </div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>
-&lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
-  &lt;div class="bt bw4 border-blue br1 pa2"&gt;
-    &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
-    &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
-    &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-                    </pre>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="font-antialiased pt4 pb5 bb border-grey cf">
+      <div class="fl ml4">
+        <p class="sans-serif fs2 mb3">Full bleed image</p>
+        <div class="sans-serif relative db mw11">
+          <img class="w-100 db" src="images/sea-ice.jpg" />
+          <div class="absolute bottom0 h100 bg-fade70 mv0 pl3 white">
+            <p class="fs5 pt3 pb1 mt2 mb0">Sea ice disaster</p>
+            <p class="fs2 lh-body mt0">The lack of public awareness and involvement is greatly concerning.</p>
+            <a href="#" class="tdu absolute pointer bottom0 pb3 mb2 white">Read more</a>
+          </div>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Card with chart</p>
-                <div class="sans-serif db mw13 ba border-grey br1">
-                    <div class="pt1 pr5 pb3 bb border-grey bg-silver">
-                        <p class="fs3 mv0 ml3 pt3">Sea ice disaster</p>
-                        <p class="fs1 dark-grey mt0 mb1 ml3">Posted two days ago</p>
-                    </div>
+      </div>
+      <div class="fl ml4">
+        <p class="sans-serif fs2">Code</p>
+        <div class="bg-black white mr4 ph4 pv2 mw13 overflow-x-scroll">
+          <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"</span>&gt;
+            &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
+            &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+            &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2 dark-grey mt0 mh0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
+            &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
+            &lt;/<span class="blue">div</span>&gt;
+            &lt;/<span class="blue">div</span>&gt;</pre>
+        </div>
+      </div>
+    </div>
+    <div class="font-antialiased pt4 pb5 bb border-grey cf">
+      <div class="fl ml4">
+        <p class="sans-serif fs2">Simple profile</p>
+        <div class="sans-serif pv4 ph5 tc ba border-grey br2">
+          <div class="pt2 pb1">
+            <div>
+              <img class="w4 h4 br-100 ba border-grey br1" src="images/profile.png" />
+              <p class="fs6 mv0">Xiuying Li</pt2>
+<p class="fs1 dark-grey mv0">Nanjing, China</p>
+<p class="mb0">Software engineer at Alibaba</p>
+<p class="fs1 dark-grey mt1">C/C++, Java and MYSQL</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fl ml4">
+  <p class="sans-serif fs2">Code</p>
+  <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
+    <pre>
+      &lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
+      &lt;div class="bt bw4 border-blue br1 pa2"&gt;
+      &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
+      &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
+      &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+    </pre>
+  </div>
+</div>
+</div>
+<div class="font-antialiased pt4 pb5 bb border-grey cf">
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Media object</p>
+    <div class="sans-serif db pb2 mw11 ba border-grey br1">
+      <div class="flex">
+        <div class="w3 h3 bg-grey self-center mt3 ml3"></div>
+        <div class="self-center pt1 pr5">
+          <p class="fs3 mt3 mb1 ml3">Sea ice disaster</p>
+          <p class="fs1 dark-grey mv0 ml3 pb1">Posted two days ago</p>
+        </div>
+      </div>
+      <div class="pt4 mt2 pb3 ml3">
+        <a href="#" class="tdn blue">Read more</a>
+        <span>or</span>
+        <a href="#" class="tdn blue">take action today!</a>
+      </div>
+    </div>
+  </div>
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Code</p>
+    <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
+      <pre>
+        &lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
+        &lt;div class="bt bw4 border-blue br1 pa2"&gt;
+        &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
+        &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
+        &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+      </pre>
+    </div>
+  </div>
+</div>
+<div class="font-antialiased pt4 pb5 bb border-grey cf">
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Media object with list</p>
+    <div class="sans-serif db mw11 ba border-grey br1">
+      <div class="flex">
+        <div class="w3 h3 bg-grey self-center mt3 ml3"></div>
+        <div class="self-center pt1 pr5">
+          <p class="fs3 mt3 mb1 ml3">Sea ice disaster</p>
+          <p class="fs1 dark-grey mv0 ml3">Posted two days ago</p>
+        </div>
+      </div>
+      <div class="pt3 mt1">
+        <div class="bt border-grey pv2">
+          <p class="fs3 mt2 pt1 mb0 pl3">2015/16</p>
+          <p class="fs1 mt0 pl3 dark-grey">lowest sea ice in history</p>
+        </div>
+        <div class="bt bb border-grey bg-silver pv2">
+          <p class="fs3 mt2 pt1 mb0 pl3">2040</p>
+          <p class="fs1 mt0 pl3 dark-grey">predicted to have an ice-free Arctic</p>
+        </div>
+        <div class="pv2">
+          <p class="fs3 mt2 pt1 mb0 pl3">2007</p>
+          <p class="fs1 mt0 pl3 dark-grey">The Northwest Passage opened</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Code</p>
+    <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
+      <pre>
+        &lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
+        &lt;div class="bt bw4 border-blue br1 pa2"&gt;
+        &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
+        &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
+        &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+      </pre>
+    </div>
+  </div>
+</div>
+<div class="font-antialiased pt4 pb5 bb border-grey cf">
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Profile with detail</p>
+    <div class="sans-serif mw12 tc ba border-grey">
+      <p class="tl fs1 dark-grey mt2 ml2"><a href="#" class="blue tdn pointer">Software</a> > <a href="#" class="blue tdn pointer">C/C++, Java and MYSQL</a></p>
+      <img class="self-center w4 h4 br-100 ba border-grey mt3" src="images/profile.png"/>
+      <p class="self-center fs4 mb0">Xiuying Li</pt2>
+<p class="self-center fs1 dark-grey mt1 mb4 fs1 dark-grey mv0">Nanjing, China</p>
+<p class="mt3 mb3">Freelance software engineer</p>
+<button class="fs2 sans-serif bg-blue border-blue br2 bw0 pv2 ph3 mh1 mb3 button-press white pointer">Hire Xiuying</button>
+<a href="#" class="fs1 db blue tdn pointer mb3 pb1">View previous work</a>
+<div class="tc cf bg-silver mw12 mt2 bt border-grey">
+  <div class="fl w-33">
+    <p class="dib fs3 mt2 pt1 mb0 mh2">$80.95<span class="fstiny pl1">USD</span></p>
+    <p class="dib fs1 mt0 mh2">hourly rate</p>
+  </div>
+  <div class="fl w-33 br bl border-grey">
+    <p class="dib fs3 mt2 pt1 mb0 mh2">5/5</p>
+    <p class="dib fs1 mt0 mh2">700+ ratings</p>
+  </div>
+  <div class="fl w-33">
+    <p class="dib fs3 mt2 pt1 mb0 mh2">17</p>
+    <p class="dib fs1 mt0 mh2">recommendations</p>
+  </div>
+</div>
+</div>
+</div>
+<div class="fl ml4">
+  <p class="sans-serif fs2">Code</p>
+  <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
+    <pre>
+      &lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
+      &lt;div class="bt bw4 border-blue br1 pa2"&gt;
+      &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
+      &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
+      &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+    </pre>
+  </div>
+</div>
+</div>
+<div class="font-antialiased pt4 pb5 bb border-grey cf">
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Top image</p>
+    <div class="sans-serif relative pb2 mw11 ba br1 border-grey">
+      <div class="w-100 bt bw6 border-blue" src="images/restaraunt.png"></div>
+      <div class="bt border-grey"></div>
+      <div class="pa3 tc">
+        <div class="relative right2">
+          <img class="w3 h3 absolute bottom-1 shadow br-100 ba bw1 border-white" src="images/profile6.png"/>
+        </div>
+        <p class="fs5 pb2 mt4 mb0">Jamie Oliver</p>
+        <p class="fs2 lh-body pb1 mt0 mh3 mb2">James "Jamie" Oliver is a British celebrity chef and restaurateur.</p>
+        <a href="#" class="tdn blue">Learn more</a>
+      </div>
+    </div>
+  </div>
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Code</p>
+    <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
+      <pre>
+        &lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
+        &lt;div class="bt bw4 border-blue br1 pa2"&gt;
+        &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
+        &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
+        &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+      </pre>
+    </div>
+  </div>
+</div>
+<div class="font-antialiased pt4 pb5 bb border-grey cf">
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Weather card 1</p>
+    <div class="sans-serif pb2 mw11 ba br4 border-grey">
+      <img class="w-100 bb br-top br4 border-grey" src="images/melbourne.png" />
+      <div class="ph3 pb3">
+        <svg width="100px" height="100px" class="fl w3 h3 ph3" viewBox="0 0 600 600">
+          <g>
+	    <path d="M533.6,202.65c1.9-7.7,1.9-13.4,1.9-21c0-53.5-42.1-95.6-95.6-95.6c-36.301,0-66.9,19.1-84.101,47.8 c-11.5-5.7-24.899-9.6-40.2-9.6c-40.2,0-72.7,26.8-82.2,63.1c-13.4-3.8-26.8-5.7-42.1-5.7c-74.6,0-133.9,59.3-133.9,133.9 c0,1.9,0,5.7,0,7.601C23,338.45,0,370.95,0,411.15c0,53.5,42.1,95.6,95.6,95.6h325.1c53.5,0,95.6-42.1,95.6-95.6 c0-21-7.6-42.101-19.1-57.4h19.1c42.101,0,76.5-34.4,76.5-76.5C592.9,240.95,568,210.35,533.6,202.65z M420.8,487.65H95.6 c-42.1,0-76.5-34.4-76.5-76.5c0-36.301,24.9-66.9,59.3-74.601c-1.9-7.7-1.9-13.399-1.9-21c0-63.1,51.6-114.8,114.8-114.8 c44,0,84.1,24.9,103.3,63.1c15.3-15.3,36.3-24.9,59.3-24.9c47.8,0,86.1,38.2,86.1,86.1c0,3.8,0,7.601,0,11.5 c32.5,7.601,57.4,38.2,57.4,74.601C497.2,453.25,462.8,487.65,420.8,487.65z M516.4,334.65h-38.2 c-5.7-3.801-11.5-7.601-19.101-11.5c0-57.4-47.8-103.3-105.199-103.3c-21,0-38.2,5.7-55.5,15.3c-13.4-17.2-28.7-30.6-47.8-40.2 c7.6-30.6,32.5-51.6,65-51.6c19.101,0,38.2,7.7,49.7,21c7.601-34.4,38.2-59.3,74.601-59.3c42.1,0,76.5,34.4,76.5,76.5 c0,13.4-3.801,26.8-9.601,38.2h9.601c32.5,0,57.399,24.9,57.399,57.4C573.8,309.65,548.9,334.65,516.4,334.65z"/>
+          </g>
+        </svg>
+        <p class="fs5 pt1 mt3 mb0">24&deg;</p>
+        <p class="fs2 mt1 grey">Melbourne, Australia</p>
+        <p class="fs2 lh-body pt2 pb1 mt3 mh3 mb2">A warm day with northern winds. Chance of any rain: 20%.</p>
+        <a href="#" class="tdn blue pointer button-press mh3">View extended forecast</a>
+      </div>
+    </div>
+  </div>
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Code</p>
+    <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
+      <pre>
+        &lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
+        &lt;div class="bt bw4 border-blue br1 pa2"&gt;
+        &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
+        &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
+        &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+      </pre>
+    </div>
+  </div>
+</div>
+<div class="font-antialiased pt4 pb5 bb border-grey cf">
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Card with chart</p>
+    <div class="sans-serif db mw13 ba border-grey br1">
+      <div class="pt1 pr5 pb3 bb border-grey bg-silver">
+        <p class="fs3 mv0 ml3 pt3">Sea ice disaster</p>
+        <p class="fs1 dark-grey mt0 mb1 ml3">Posted two days ago</p>
+      </div>
 
-                    <div class="cf">
-                        <div class="fl pt2 mb2">
-                            <div class="pt3 pb1">
-                                <p class="fs2 ttu fw700 mv0 pl3">2015/16</p>
-                                <p class="fs1 mt0 pl3 dark-grey">lowest sea ice in history</p>
-                            </div>
-                            <div class="pv1">
-                                <p class="fs2 ttu fw700 mv0 pl3">2040</p>
-                                <p class="fs1 mt0 pl3 dark-grey">predicted to have an ice-free Arctic</p>
-                            </div>
-                            <div class="pv1">
-                                <p class="fs2 ttu fw700 mv0 pl3">2007</p>
-                                <p class="fs1 mt0 pl3 dark-grey">The Northwest Passage opened</p>
-                            </div>
-                        </div>
-                        <div class="fr">
-                            <div class="w3 h3 mt5 mh4 relative bottom1 br-100 ba bw4 border-blue"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>
-&lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
-  &lt;div class="bt bw4 border-blue br1 pa2"&gt;
-    &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
-    &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
-    &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-                    </pre>
-                </div>
-            </div>
+      <div class="cf">
+        <div class="fl pt2 mb2">
+          <div class="pt3 pb1">
+            <p class="fs2 ttu fw700 mv0 pl3">2015/16</p>
+            <p class="fs1 mt0 pl3 dark-grey">lowest sea ice in history</p>
+          </div>
+          <div class="pv1">
+            <p class="fs2 ttu fw700 mv0 pl3">2040</p>
+            <p class="fs1 mt0 pl3 dark-grey">predicted to have an ice-free Arctic</p>
+          </div>
+          <div class="pv1">
+            <p class="fs2 ttu fw700 mv0 pl3">2007</p>
+            <p class="fs1 mt0 pl3 dark-grey">The Northwest Passage opened</p>
+          </div>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Dribbble shot card</p>
-                <div class="sans-serif db pt4 ph4 pb3 shadow br2">
-                    <div class="w6 h6 ph5 pv2 bg-grey br1"></div>
-                    <p class="mt3 mb1">Attachments</p>
-                    <div class="mb1">
-                        <div class="dib w3 h3 bg-grey mt0"></div>
-                        <div class="dib w3 h3 bg-grey mt0"></div>
-                        <div class="dib w3 h3 bg-grey mt0"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>
-&lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
-  &lt;div class="bt bw4 border-blue br1 pa2"&gt;
-    &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
-    &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
-    &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-                    </pre>
-                </div>
-            </div>
+        <div class="fr">
+          <div class="w3 h3 mt5 mh4 relative bottom1 br-100 ba bw4 border-blue"></div>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Full background colour</p>
-                <div class="sans-serif bg-blue white db pb2 w6 ba br2 border-blue">
-                    <div class="pa3">
-                        <p class="fs1 ttu mt1 mh0 mb0">New projects</p>
-                        <p class="fs6 fw100 pb2 mt2 mb1">92</p>
-                    </div>
-                    <div class="mv2">
-                        <div class="bt border-white pt3 mh3">
-                            <a href="#" class="tdn pointer white button-press mt4 mb4 mh0">1% increase</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Full background colour</p>
-                <div class="sans-serif bg-green white db pb2 w6 ba br2 border-green">
-                    <div class="pa3">
-                        <p class="fs1 ttu mt1 mh0 mb0">Team members</p>
-                        <p class="fs6 fw100 pb2 mt2 mb1">7,923</p>
-                    </div>
-                    <div class="mv2">
-                        <div class="bt border-white pt3 mh3">
-                            <a href="#" class="tdn pointer white button-press mt4 mb4 mh0">4% increase</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Full background colour</p>
-                <div class="sans-serif bg-orange white db pb2 w6 ba br2 border-orange">
-                    <div class="pa3">
-                        <p class="fs1 ttu mt1 mh0 mb0">Total budget</p>
-                        <p class="fs6 fw100 pb2 mt2 mb1">$82,234</p>
-                    </div>
-                    <div class="mv2">
-                        <div class="bt border-white pt3 mh3">
-                            <a href="#" class="tdn pointer white button-press mt4 mb4 mh0">21% increase</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Full background colour</p>
-                <div class="sans-serif bg-red white db pb2 w6 ba br2 border-red">
-                    <div class="pa3">
-                        <p class="fs1 ttu mt1 mh0 mb0">New customers</p>
-                        <p class="fs6 fw100 pb2 mt2 mb1">3</p>
-                    </div>
-                    <div class="mv2">
-                        <div class="bt border-white pt3 mh3">
-                            <a href="#" class="tdn pointer white button-press mt4 mb4 mh0">13% decrease</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-black white mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"</span>&gt;
-  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2  mt0 mh0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
-  &lt;/<span class="blue">div</span>&gt;
-&lt;/<span class="blue">div</span>&gt;</pre>
-                </div>
-            </div>
+      </div>
+    </div>
+  </div>
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Code</p>
+    <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
+      <pre>
+        &lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
+        &lt;div class="bt bw4 border-blue br1 pa2"&gt;
+        &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
+        &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
+        &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+      </pre>
+    </div>
+  </div>
+</div>
+<div class="font-antialiased pt4 pb5 bb border-grey cf">
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Dribbble shot card</p>
+    <div class="sans-serif db pt4 ph4 pb3 shadow br2">
+      <div class="w6 h6 ph5 pv2 bg-grey br1"></div>
+      <p class="mt3 mb1">Attachments</p>
+      <div class="mb1">
+        <div class="dib w3 h3 bg-grey mt0"></div>
+        <div class="dib w3 h3 bg-grey mt0"></div>
+        <div class="dib w3 h3 bg-grey mt0"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Code</p>
+    <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
+      <pre>
+        &lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
+        &lt;div class="bt bw4 border-blue br1 pa2"&gt;
+        &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
+        &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
+        &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+      </pre>
+    </div>
+  </div>
+</div>
+<div class="font-antialiased pt4 pb5 bb border-grey cf">
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Full background colour</p>
+    <div class="sans-serif bg-blue white db pb2 w6 ba br2 border-blue">
+      <div class="pa3">
+        <p class="fs1 ttu mt1 mh0 mb0">New projects</p>
+        <p class="fs6 fw100 pb2 mt2 mb1">92</p>
+      </div>
+      <div class="mv2">
+        <div class="bt border-white pt3 mh3">
+          <a href="#" class="tdn pointer white button-press mt4 mb4 mh0">1% increase</a>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Project card</p>
-                <div class="sans-serif db pb2 mw11 shadow">
-                    <div class="pt3 ph3 mh1">
-                        <div class="h5 bg-blue"></div>
-                    </div>
-                    <div class="pa3 mh1">
-                        <p class="fs4 mt0 mb2">Redesign price page</p>
-                        <p class="fs2 dark-grey lh-body pb1 mt0 mb3">Design streamlined experience for users based on latest research.</p>
-                        <div class="flex">
-                            <div class="flex w2 h2 br-100 ba border-grey pointer button-press mr2">
-                                <p class="self-center dark-grey fs3 w-100 tc mt3">+</p>
-                            </div>
-                            <img class="w2 h2 br-100 ba border-grey mr2" src="images/profile.png" />
-                            <img class="w2 h2 br-100 ba border-grey mr2" src="images/profile2.png" />
-                            <img class="w2 h2 br-100 ba border-grey mr2" src="images/profile3.png" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>
-&lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
-  &lt;div class="bt bw4 border-blue br1 pa2"&gt;
-    &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
-    &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
-    &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-                    </pre>
-                </div>
-            </div>
+      </div>
+    </div>
+  </div>
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Full background colour</p>
+    <div class="sans-serif bg-green white db pb2 w6 ba br2 border-green">
+      <div class="pa3">
+        <p class="fs1 ttu mt1 mh0 mb0">Team members</p>
+        <p class="fs6 fw100 pb2 mt2 mb1">7,923</p>
+      </div>
+      <div class="mv2">
+        <div class="bt border-white pt3 mh3">
+          <a href="#" class="tdn pointer white button-press mt4 mb4 mh0">4% increase</a>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Detailed information card</p>
-                <div class="sans-serif db pb2 mw11 ba br1 border-grey">
-                    <div class="pa3">
-                        <p class="fs6 pb2 mt0 mb0">Antarctica</p>
-                        <p class="mb0 mt1">
-                            <span class="fw600">Area:</span><span class="fr"> 14,000,000 km2</span>
-                        </p>
-                        <p class="mt1 mb1">
-                            <span class="fw600">Population:</span><span class="fr"> 5,000 residents</span>
-                        </p>
-                    </div>
-                    <img class="w-100" src="images/antarctica.jpg" />
-                    <div class="pa3">
-                        <p class="fs2 ttu dark-grey pb2 mt0 mb0">Legal system</p>
-                        <p class="fs2 lh-body pb1 mt0 mh0 mb2">Antarctica currently has no permanent population and therefore it has no citizenship nor government. All personnel present on Antarctica at any time are citizens or nationals of some sovereignty outside Antarctica, as there is no Antarctic sovereignty.</p>
-                        <a href="#" class="tdn blue">Learn more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>
-&lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
-  &lt;div class="bt bw4 border-blue br1 pa2"&gt;
-    &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
-    &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
-    &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-                    </pre>
-                </div>
-            </div>
+      </div>
+    </div>
+  </div>
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Full background colour</p>
+    <div class="sans-serif bg-orange white db pb2 w6 ba br2 border-orange">
+      <div class="pa3">
+        <p class="fs1 ttu mt1 mh0 mb0">Total budget</p>
+        <p class="fs6 fw100 pb2 mt2 mb1">$82,234</p>
+      </div>
+      <div class="mv2">
+        <div class="bt border-white pt3 mh3">
+          <a href="#" class="tdn pointer white button-press mt4 mb4 mh0">21% increase</a>
         </div>
-        <div class="font-antialiased pt4 pb5 bb border-grey cf">
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Tweets</p>
-                <div class="sans-serif db pb2 mw15 bt bb br1 border-light-grey">
-                    <div class="font-antialiased pt1 pr5 pl2">
-                        <div class="cf">
-                            <img class="w3 h3 fl mt2 ml2 br3" src="images/profile7.png"/>
-                            <div class="fr pt1 pl2">
-                                <div class="fs1 pointer">
-                                    <p class="dib fw700 ma0 pt1">Philip Ardeljan</p>
-                                    <p class="dib light-grey ma0">@philipardeljan</p>
-                                    <p class="dib light-grey ma0">- Dec 15</p>
-                                </div>
-                                <p class="ma0 pt1">"Quick" Export as PNG.</p>
-                                <p class="ma0 pt1">"hahahaahha photoshop you ain't fooling anyone.</p>
-                                <div class="mt3">
-                                    <img class="w1 h1 mr5" src="images/reply.png" />
-                                    <img class="w1 h1 mr5" src="images/retweet.png" />
-                                    <img class="w1 h1 mr5" src="images/heart.png" />
-                                    <img class="w1 h1 mr5" src="images/barchart.png" />
-                                    <img class="w1 h1 mr5" src="images/more.png" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sans-serif db pb2 mw15 bb br1 border-light-grey">
-                    <div class="font-antialiased pt1 pr5 pl2">
-                        <div class="cf">
-                            <img class="w3 h3 fl mt2 ml2 br3" src="images/profile7.png"/>
-                            <div class="fr pt1 pl2">
-                                <div class="fs1">
-                                    <p class="dib fw700 ma0 pt1">Philip Ardeljan</p>
-                                    <p class="dib light-grey ma0">@philipardeljan</p>
-                                    <p class="dib light-grey ma0">- Dec 15</p>
-                                </div>
-                                <p class="ma0 pt1">"Quick" Export as PNG.</p>
-                                <p class="ma0 pt1">"hahahaahha photoshop you ain't fooling anyone.</p>
-                                <div class="mt3">
-                                    <img class="w1 h1 mr5" src="images/reply.png" />
-                                    <img class="w1 h1 mr5" src="images/retweet.png" />
-                                    <img class="w1 h1 mr5" src="images/heart.png" />
-                                    <img class="w1 h1 mr5" src="images/barchart.png" />
-                                    <img class="w1 h1 mr5" src="images/more.png" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+    </div>
+  </div>
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Full background colour</p>
+    <div class="sans-serif bg-red white db pb2 w6 ba br2 border-red">
+      <div class="pa3">
+        <p class="fs1 ttu mt1 mh0 mb0">New customers</p>
+        <p class="fs6 fw100 pb2 mt2 mb1">3</p>
+      </div>
+      <div class="mv2">
+        <div class="bt border-white pt3 mh3">
+          <a href="#" class="tdn pointer white button-press mt4 mb4 mh0">13% decrease</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Code</p>
+    <div class="bg-black white mr4 ph4 pv2 mw13 overflow-x-scroll">
+      <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"</span>&gt;
+        &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
+        &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+        &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2  mt0 mh0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
+        &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
+        &lt;/<span class="blue">div</span>&gt;
+        &lt;/<span class="blue">div</span>&gt;</pre>
+    </div>
+  </div>
+</div>
+<div class="font-antialiased pt4 pb5 bb border-grey cf">
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Project card</p>
+    <div class="sans-serif db pb2 mw11 shadow">
+      <div class="pt3 ph3 mh1">
+        <div class="h5 bg-blue"></div>
+      </div>
+      <div class="pa3 mh1">
+        <p class="fs4 mt0 mb2">Redesign price page</p>
+        <p class="fs2 dark-grey lh-body pb1 mt0 mb3">Design streamlined experience for users based on latest research.</p>
+        <div class="flex">
+          <div class="flex w2 h2 br-100 ba border-grey pointer button-press mr2">
+            <p class="self-center dark-grey fs3 w-100 tc mt3">+</p>
+          </div>
+          <img class="w2 h2 br-100 ba border-grey mr2" src="images/profile.png" />
+          <img class="w2 h2 br-100 ba border-grey mr2" src="images/profile2.png" />
+          <img class="w2 h2 br-100 ba border-grey mr2" src="images/profile3.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Code</p>
+    <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
+      <pre>
+        &lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
+        &lt;div class="bt bw4 border-blue br1 pa2"&gt;
+        &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
+        &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
+        &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+      </pre>
+    </div>
+  </div>
+</div>
+<div class="font-antialiased pt4 pb5 bb border-grey cf">
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Detailed information card</p>
+    <div class="sans-serif db pb2 mw11 ba br1 border-grey">
+      <div class="pa3">
+        <p class="fs6 pb2 mt0 mb0">Antarctica</p>
+        <p class="mb0 mt1">
+          <span class="fw600">Area:</span><span class="fr"> 14,000,000 km2</span>
+        </p>
+        <p class="mt1 mb1">
+          <span class="fw600">Population:</span><span class="fr"> 5,000 residents</span>
+        </p>
+      </div>
+      <img class="w-100" src="images/antarctica.jpg" />
+      <div class="pa3">
+        <p class="fs2 ttu dark-grey pb2 mt0 mb0">Legal system</p>
+        <p class="fs2 lh-body pb1 mt0 mh0 mb2">Antarctica currently has no permanent population and therefore it has no citizenship nor government. All personnel present on Antarctica at any time are citizens or nationals of some sovereignty outside Antarctica, as there is no Antarctic sovereignty.</p>
+        <a href="#" class="tdn blue">Learn more</a>
+      </div>
+    </div>
+  </div>
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Code</p>
+    <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
+      <pre>
+        &lt;div class="ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"&gt;
+        &lt;div class="bt bw4 border-blue br1 pa2"&gt;
+        &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
+        &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
+        &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+      </pre>
+    </div>
+  </div>
+</div>
+<div class="font-antialiased pt4 pb5 bb border-grey cf">
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Tweets</p>
+    <div class="sans-serif db pb2 mw15 bt bb br1 border-light-grey">
+      <div class="font-antialiased pt1 pr5 pl2">
+        <div class="cf">
+          <img class="w3 h3 fl mt2 ml2 br3" src="images/profile7.png"/>
+          <div class="fr pt1 pl2">
+            <div class="fs1 pointer">
+              <p class="dib fw700 ma0 pt1">Philip Ardeljan</p>
+              <p class="dib light-grey ma0">@philipardeljan</p>
+              <p class="dib light-grey ma0">- Dec 15</p>
             </div>
-            <div class="fl ml4">
-                <p class="sans-serif fs2">Code</p>
-                <div class="bg-black white mr4 ph4 pv2 mw13 overflow-x-scroll">
-                    <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"</span>&gt;
-  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2  mt0 mh0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
-  &lt;/<span class="blue">div</span>&gt;
-&lt;/<span class="blue">div</span>&gt;</pre>
-                </div>
+            <p class="ma0 pt1">"Quick" Export as PNG.</p>
+            <p class="ma0 pt1">"hahahaahha photoshop you ain't fooling anyone.</p>
+            <div class="mt3">
+              <img class="w1 h1 mr5" src="images/reply.png" />
+              <img class="w1 h1 mr5" src="images/retweet.png" />
+              <img class="w1 h1 mr5" src="images/heart.png" />
+              <img class="w1 h1 mr5" src="images/barchart.png" />
+              <img class="w1 h1 mr5" src="images/more.png" />
             </div>
-        </div>                
-    </body>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sans-serif db pb2 mw15 bb br1 border-light-grey">
+      <div class="font-antialiased pt1 pr5 pl2">
+        <div class="cf">
+          <img class="w3 h3 fl mt2 ml2 br3" src="images/profile7.png"/>
+          <div class="fr pt1 pl2">
+            <div class="fs1">
+              <p class="dib fw700 ma0 pt1">Philip Ardeljan</p>
+              <p class="dib light-grey ma0">@philipardeljan</p>
+              <p class="dib light-grey ma0">- Dec 15</p>
+            </div>
+            <p class="ma0 pt1">"Quick" Export as PNG.</p>
+            <p class="ma0 pt1">"hahahaahha photoshop you ain't fooling anyone.</p>
+            <div class="mt3">
+              <img class="w1 h1 mr5" src="images/reply.png" />
+              <img class="w1 h1 mr5" src="images/retweet.png" />
+              <img class="w1 h1 mr5" src="images/heart.png" />
+              <img class="w1 h1 mr5" src="images/barchart.png" />
+              <img class="w1 h1 mr5" src="images/more.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fl ml4">
+    <p class="sans-serif fs2">Code</p>
+    <div class="bg-black white mr4 ph4 pv2 mw13 overflow-x-scroll">
+      <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"</span>&gt;
+        &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
+        &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+        &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2  mt0 mh0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
+        &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
+        &lt;/<span class="blue">div</span>&gt;
+        &lt;/<span class="blue">div</span>&gt;</pre>
+    </div>
+  </div>
+</div>
+</body>
 </html>
