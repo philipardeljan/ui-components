@@ -154,6 +154,7 @@
 /* font-family */
 .sans-serif         { font-family: sans-serif; }
 .system-font        { font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+.monospace          { font-family: monospace; }
 
 /* font-size */
 .fstiny {font-size: .7rem; }

@@ -12,18 +12,34 @@
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script>
       $(function($) {
-      $("#card").flip({
+      $("#card1").flip({
       trigger: 'manual',
       });
       });
 
       $(function($) {
-      $("#toggle-btn").click(function(){
-      $("#card").flip(true);
+      $("#toggle-true1").click(function(){
+      $("#card1").flip(true);
       });
 
-      $("#toggle-btn2").click(function(){
-      $("#card").flip(false);
+      $("#toggle-false1").click(function(){
+      $("#card1").flip(false);
+      });
+      });
+
+      $(function($) {
+      $("#card2").flip({
+      trigger: 'manual',
+      });
+      });
+
+      $(function($) {
+      $("#toggle-true2").click(function(){
+      $("#card2").flip(true);
+      });
+
+      $("#toggle-false2").click(function(){
+      $("#card2").flip(false);
       });
       });
     </script>
@@ -33,22 +49,20 @@
     <div class="pv4 tc">
       <h1 class="fs6 fw400 sans-serif mv0">Cards</h1>
       <div class="sans-serif">
-        <p class="mt2 mb0">You shoud probably donate to Wikipedia.</p>
+        <p class="mt2 mb0">Include the CSS and copy the HTML code below:</p>
       </div>
     </div>
-    <div id="card">
-      <div class="bt bb border-grey">
+    <div id="card1">
+      <div class="bt bb border-grey pb4">
         <div class="front">
           <div class="font-antialiased pt4">
-            <div class="sans-serif fs2">
-              <p class="tc fs3 mv0">Simple border</p>
-            </div>
-            <button class="fs2 flex sans-serif bg-blue br2 border-blue bw0 white pointer button-press center db mv3 pa2" id="toggle-btn">View code</button>
-            <div class="flex justify-center mt3 pt2">
+              <p class="sans-serif fs2 tc fs3 mv0">Simple border</p>
+            <button class="fs2 flex sans-serif bg-blue br2 border-blue bw0 white pointer button-press center db mv3 pv2 ph3" id="toggle-true1">View code</button>
+            <div class="flex justify-center mt4 pt2">
               <div class="sans-serif db pb2 mw11 ba br1 border-grey">
                 <div class="pa3">
                   <p class="fs5 pb2 mt2 mb0">Sea ice disaster</p>
-                  <p class="fs2 lh-body mt0 mh0 mb2">Rising sea levels are causing much anguish in the scientific community.</p>
+                  <p class="fs2 lh-body mt0 mb2">Rising sea levels are causing much anguish in the scientific community.</p>
                   <a href="#" class="tdn blue">Read more</a>
                 </div>
               </div>
@@ -57,19 +71,18 @@
         </div>
         <div class="back">
           <div class="font-antialiased pt4">
-            <div class="sans-serif fs2">
-              <p class="tc fs3 mv0">Code</p>
-            </div>
-            <button class="fs2 sans-serif center db bg-blue br2 border-blue bw0 white pointer button-press center db mv3 pa2" id="toggle-btn2">View UI</button>
-            <div class="flex justify-center mt4">
-              <pre class="ma0"><div class="sans-serif bg-black white mr4 ph4 mw13 overflow-x-scroll">
-                  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"</span>&gt;
-                    &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
-                      &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
-                      &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2  mt0 mh0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
-                      &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
-                    &lt;/<span class="blue">div</span>&gt;
-                  &lt;/<span class="blue">div</span>&gt;
+            <p class="sans-serif fs2 tc fs3 mv0">Code</p>
+            <button class="fs2 sans-serif center db bg-blue br2 border-blue bw0 white pointer button-press center db mv3 pv2 ph3" id="toggle-false1">View UI</button>
+            <div class="flex justify-center mt2">
+              <pre class="ma0">
+                <div class="system-font bg-black white ph4 pv2 mw13 overflow-x-scroll">
+&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"sans-serif db db pb2 mw11 ba br1 border-grey"</span>&gt;
+  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"pa3"</span>&gt;
+    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt2 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2 lh-body mt0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
+   &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
+  &lt;/<span class="blue">div</span>&gt;
+&lt;/<span class="blue">div</span>&gt;
                 </div>
               </pre>
             </div>
@@ -77,21 +90,30 @@
         </div>
       </div>
     </div>
-</div>
-<div class="font-antialiased pt4 pb5 bb border-grey cf">
-  <div class="fl ml4">
-    <p class="sans-serif fs2 mb3">Simple shadow</p>
-    <div class="sans-serif db pb2 mw11 shadow">
-      <div class="pa3">
-        <p class="fs5 pb2 mt2 mb0">Sea ice disaster</p>
-        <p class="fs2 lh-body mt0 mh0 mb2">Rising sea levels are causing much anguish in the scientific community.</p>
-        <a href="#" class="tdn blue">Read more</a>
-      </div>
-    </div>
-  </div>
-  <div class="fl ml4">
-    <p id="simple-border-code" class="sans-serif fs2">Code</p>
-    <div class="bg-black white mr4 ph4 pv2 mw13 overflow-x-scroll">
+
+    <div id="card2">
+      <div class="bb border-grey pb5">
+        <div class="front">
+          <div class="font-antialiased pt4">
+            <p class="sans-serif fs2 tc fs3 mv0">Simple shadow</p>
+            <button class="fs2 flex sans-serif bg-blue br2 border-blue bw0 white pointer button-press center db mv3 pv2 ph3" id="toggle-true2">View code</button>
+            <div class="flex justify-center mt4 pt2">
+            <div class="sans-serif db pb2 mw11 shadow">
+              <div class="pa3">
+                <p class="fs5 pb2 mt2 mb0">Sea ice disaster</p>
+                <p class="fs2 lh-body mt0 mh0 mb2">Rising sea levels are causing much anguish in the scientific community.</p>
+                <a href="#" class="tdn blue">Read more</a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="back">
+          <div class="font-antialiased pt4">
+          <p class="sans-serif fs2 tc fs3 mv0">Code</p>
+          <button class="fs2 sans-serif center db bg-blue br2 border-blue bw0 white pointer button-press center db mv3 pv2 ph3" id="toggle-false2">View UI</button>
+          <div class="flex justify-center mt4">
+          <div class="bg-black white mr4 ph4 pv2 mw13 overflow-x-scroll">
       <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 sans-serif db fl pb2 mw13 ba br1 border-blue"</span>&gt;
         &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
         &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
@@ -99,9 +121,12 @@
         &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
         &lt;/<span class="blue">div</span>&gt;
         &lt;/<span class="blue">div</span>&gt;</pre>
+          </div>
+          </div>
+          </div>
+          </div>
+      </div>
     </div>
-  </div>
-</div>
 <div class="font-antialiased pt4 pb5 bb border-grey cf">
   <div class="fl ml4">
     <p class="sans-serif fs2 mb3">No content</p>
