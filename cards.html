@@ -12,7 +12,7 @@
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script>
       $(function($) {
-      $("#card1, #card2, #card3, #card4, #card5, #card6, #card7").flip({
+      $("#card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8, #card9, #card10, #card11, #card12, #card13, #card14, #card15, #card16").flip({
       trigger: 'manual',
       });
       });
@@ -86,6 +86,106 @@
       $("#card7").flip(false);
       });
       });
+
+      $(function($) {
+      $("#toggle-true8").click(function(){
+      $("#card8").flip(true);
+      });
+
+      $("#toggle-false8").click(function(){
+      $("#card8").flip(false);
+      });
+      });
+
+      $(function($) {
+      $("#toggle-true9").click(function(){
+      $("#card9").flip(true);
+      });
+
+      $("#toggle-false9").click(function(){
+      $("#card9").flip(false);
+      });
+      });
+
+      $(function($) {
+      $("#toggle-true10").click(function(){
+      $("#card10").flip(true);
+      });
+
+      $("#toggle-false10").click(function(){
+      $("#card10").flip(false);
+      });
+      });
+
+      $(function($) {
+      $("#toggle-true11").click(function(){
+      $("#card11").flip(true);
+      });
+
+      $("#toggle-false11").click(function(){
+      $("#card11").flip(false);
+      });
+      });
+
+      $(function($) {
+      $("#toggle-true12").click(function(){
+      $("#card12").flip(true);
+      });
+
+      $("#toggle-false12").click(function(){
+      $("#card12").flip(false);
+      });
+      });
+
+      $(function($) {
+      $("#toggle-true13").click(function(){
+      $("#card13").flip(true);
+      });
+
+      $("#toggle-false13").click(function(){
+      $("#card13").flip(false);
+      });
+      });
+
+      $(function($) {
+      $("#toggle-true14").click(function(){
+      $("#card14").flip(true);
+      });
+
+      $("#toggle-false14").click(function(){
+      $("#card14").flip(false);
+      });
+      });
+
+      $(function($) {
+      $("#toggle-true15").click(function(){
+      $("#card15").flip(true);
+      });
+
+      $("#toggle-false15").click(function(){
+      $("#card15").flip(false);
+      });
+      });
+
+      $(function($) {
+      $("#toggle-true16").click(function(){
+      $("#card16").flip(true);
+      });
+
+      $("#toggle-false16").click(function(){
+      $("#card16").flip(false);
+      });
+      });
+
+      $(function($) {
+      $("#toggle-true17").click(function(){
+      $("#card17").flip(true);
+      });
+
+      $("#toggle-false17").click(function(){
+      $("#card17").flip(false);
+      });
+      });p
     </script>
   </head>
 
@@ -293,7 +393,7 @@
                   </div>
                 </div>
                 <div class="relative white db">
-                  <img class="w-100 bt bb border-grey" src="images/restaraunt.png" />
+                  <img class="w-100 bg-grey bt bb border-grey" src="images/restaraunt.png" />
                   <p class="absolute bottom2 left1 fs5 mb0">4.5/5</p>
                   <p class="absolute bottom0 left1 fs2 mt0">based on 1,958 votes</p>
                 </div>
@@ -363,111 +463,144 @@
         </div>
       </div>
     </div>
-<div class="font-antialiased pt4 pb5 bb border-grey cf">
-  <div class="fl ml4">
-    <p class="system-font fs2">Simple profile</p>
-    <div class="system-font pv4 ph5 tc ba border-grey br2">
-      <div class="pt2 pb1">
-        <div>
-          <img class="w4 h4 br-100 ba border-grey br1" src="images/profile.png" />
-          <p class="fs6 mv0">Xiuying Li</pt2>
-<p class="fs1 dark-grey mv0">Nanjing, China</p>
-<p class="mb0">Software engineer at Alibaba</p>
-<p class="fs1 dark-grey mt1">C/C++, Java and MYSQL</p>
-</div>
-</div>
-</div>
-</div>
-<div class="fl ml4">
-  <p class="system-font fs2">Code</p>
-  <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
-    <pre>
-      &lt;div class="ml4 system-font db fl pb2 mw13 ba br1 border-blue"&gt;
-      &lt;div class="bt bw4 border-blue br1 pa2"&gt;
-      &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
-      &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
-      &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-    </pre>
-  </div>
-</div>
-</div>
-<div class="font-antialiased pt4 pb5 bb border-grey cf">
-  <div class="fl ml4">
-    <p class="system-font fs2">Media object</p>
-    <div class="system-font db pb2 mw11 ba border-grey br1">
-      <div class="flex">
-        <div class="w3 h3 bg-grey self-center mt3 ml3"></div>
-        <div class="self-center pt1 pr5">
-          <p class="fs3 mt3 mb1 ml3">Sea ice disaster</p>
-          <p class="fs1 dark-grey mv0 ml3 pb1">Posted two days ago</p>
+    <div id="card8">
+      <div class="bb border-grey pb6">
+        <div class="front">
+          <div class="font-antialiased pt4">
+            <p class="system-font fs2 tc fs3 mv0">Simple profile</p>
+            <button class="fs2 flex system-font bg-blue br2 border-blue bw0 white pointer button-press center db mv3 pv2 ph3" id="toggle-true8">View code</button>
+            <div class="flex justify-center mt4">
+              <div class="system-font pv4 ph5 tc ba border-grey br2">
+                <div class="pt2 pb1">
+                  <div>
+                    <img class="w4 h4 br-100 ba border-grey br1" src="images/profile.png" />
+                    <p class="fs6 mv0">Xiuying Li</p>
+                    <p class="fs1 dark-grey mv0">Nanjing, China</p>
+                    <p class="mb0">Software engineer at Alibaba</p>
+                    <p class="fs1 dark-grey mt1">C/C++, Java and MYSQL</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="pt4 mt2 pb3 ml3">
-        <a href="#" class="tdn blue">Read more</a>
-        <span>or</span>
-        <a href="#" class="tdn blue">take action today!</a>
-      </div>
-    </div>
-  </div>
-  <div class="fl ml4">
-    <p class="system-font fs2">Code</p>
-    <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
-      <pre>
-        &lt;div class="ml4 system-font db fl pb2 mw13 ba br1 border-blue"&gt;
-        &lt;div class="bt bw4 border-blue br1 pa2"&gt;
-        &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
-        &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
-        &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
-        &lt;/div&gt;
-        &lt;/div&gt;
-      </pre>
-    </div>
-  </div>
-</div>
-<div class="font-antialiased pt4 pb5 bb border-grey cf">
-  <div class="fl ml4">
-    <p class="system-font fs2">Media object with list</p>
-    <div class="system-font db mw11 ba border-grey br1">
-      <div class="flex">
-        <div class="w3 h3 bg-grey self-center mt3 ml3"></div>
-        <div class="self-center pt1 pr5">
-          <p class="fs3 mt3 mb1 ml3">Sea ice disaster</p>
-          <p class="fs1 dark-grey mv0 ml3">Posted two days ago</p>
-        </div>
-      </div>
-      <div class="pt3 mt1">
-        <div class="bt border-grey pv2">
-          <p class="fs3 mt2 pt1 mb0 pl3">2015/16</p>
-          <p class="fs1 mt0 pl3 dark-grey">lowest sea ice in history</p>
-        </div>
-        <div class="bt bb border-grey bg-silver pv2">
-          <p class="fs3 mt2 pt1 mb0 pl3">2040</p>
-          <p class="fs1 mt0 pl3 dark-grey">predicted to have an ice-free Arctic</p>
-        </div>
-        <div class="pv2">
-          <p class="fs3 mt2 pt1 mb0 pl3">2007</p>
-          <p class="fs1 mt0 pl3 dark-grey">The Northwest Passage opened</p>
+        <div class="back">
+          <div class="font-antialiased pt4">
+            <p class="system-font fs2 tc fs3 mv0">Code</p>
+            <button class="fs2 system-font center db bg-blue br2 border-blue bw0 white pointer button-press center db mv3 pv2 ph3" id="toggle-false8">View UI</button>
+            <div class="flex justify-center bg-white mt2">
+              <pre class="ma0">
+                <div class="system-font bg-black white ph4 pt2 pb4 mw13 overflow-x-scroll">
+&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"system-font db db pb2 mw11 ba br1 border-grey"</span>&gt;
+  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"pa3"</span>&gt;
+    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt2 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2 lh-body mt0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
+   &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
+  &lt;/<span class="blue">div</span>&gt;
+&lt;/<span class="blue">div</span>&gt;</div>
+              </pre>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="fl ml4">
-    <p class="system-font fs2">Code</p>
-    <div class="bg-silver ba border-grey mr4 ph4 pv2 mw13 overflow-x-scroll">
-      <pre>
-        &lt;div class="ml4 system-font db fl pb2 mw13 ba br1 border-blue"&gt;
-        &lt;div class="bt bw4 border-blue br1 pa2"&gt;
-        &lt;p class="fs5 pb2 mt2 mb0"&gt;Sea ice disaster&lt;/p&gt;
-        &lt;p class="fs2 dark-grey mt0 mh0 mb2"&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/p&gt;
-        &lt;a href="#" class="tdn blue"&gt;Read more&lt;/a&gt;
-        &lt;/div&gt;
-        &lt;/div&gt;
-      </pre>
+    <div id="card9">
+      <div class="bb border-grey pb4">
+        <div class="front">
+          <div class="font-antialiased pt4">
+            <p class="system-font fs2 tc fs3 mv0">Media object</p>
+            <button class="fs2 flex system-font bg-blue br2 border-blue bw0 white pointer button-press center db mv3 pv2 ph3" id="toggle-true9">View code</button>
+            <div class="flex justify-center mt4">
+              <div class="system-font db pb2 mw11 ba border-grey br1">
+                <div class="flex">
+                  <div class="w3 h3 bg-grey self-center mt3 ml3"></div>
+                  <div class="self-center pt1 pr5">
+                    <p class="fs3 mt3 mb1 ml3">Sea ice disaster</p>
+                    <p class="fs1 dark-grey mv0 ml3 pb1">Posted two days ago</p>
+                  </div>
+                </div>
+                <div class="pt4 mt2 pb3 ml3">
+                  <a href="#" class="tdn blue">Read more</a>
+                  <span>or</span>
+                  <a href="#" class="tdn blue">take action today!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="back">
+          <div class="font-antialiased pt4">
+            <p class="system-font fs2 tc fs3 mv0">Code</p>
+            <button class="fs2 system-font center db bg-blue br2 border-blue bw0 white pointer button-press center db mv3 pv2 ph3" id="toggle-false9">View UI</button>
+            <div class="flex justify-center bg-white mt2">
+              <pre class="ma0">
+                <div class="system-font bg-black white ph4 pt2 pb4 mw13 overflow-x-scroll">
+&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"system-font db db pb2 mw11 ba br1 border-grey"</span>&gt;
+  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"pa3"</span>&gt;
+    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt2 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2 lh-body mt0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
+   &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
+  &lt;/<span class="blue">div</span>&gt;
+&lt;/<span class="blue">div</span>&gt;</div>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+    <div id="card10">
+      <div class="bb border-grey pb6">
+        <div class="front">
+          <div class="font-antialiased pt4">
+            <p class="system-font fs2 tc fs3 mv0">Media object with list</p>
+            <button class="fs2 flex system-font bg-blue br2 border-blue bw0 white pointer button-press center db mv3 pv2 ph3" id="toggle-true10">View code</button>
+            <div class="flex justify-center mt4">
+              <div class="system-font db mw11 ba border-grey br1">
+                <div class="flex">
+                  <div class="w3 h3 bg-grey self-center mt3 ml3"></div>
+                  <div class="self-center pt1 pr5">
+                    <p class="fs3 mt3 mb1 ml3">Sea ice disaster</p>
+                    <p class="fs1 dark-grey mv0 ml3">Posted two days ago</p>
+                  </div>
+                </div>
+                <div class="pt3 mt1">
+                  <div class="bt border-grey pv2">
+                    <p class="fs3 mt2 pt1 mb0 pl3">2015/16</p>
+                    <p class="fs1 mt0 pl3 dark-grey">lowest sea ice in history</p>
+                  </div>
+                  <div class="bt bb border-grey bg-silver pv2">
+                    <p class="fs3 mt2 pt1 mb0 pl3">2040</p>
+                    <p class="fs1 mt0 pl3 dark-grey">predicted to have an ice-free Arctic</p>
+                  </div>
+                  <div class="pv2">
+                    <p class="fs3 mt2 pt1 mb0 pl3">2007</p>
+                    <p class="fs1 mt0 pl3 dark-grey">The Northwest Passage opened</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="back">
+          <div class="font-antialiased pt4">
+            <p class="system-font fs2 tc fs3 mv0">Code</p>
+            <button class="fs2 system-font center db bg-blue br2 border-blue bw0 white pointer button-press center db mv3 pv2 ph3" id="toggle-false10">View UI</button>
+            <div class="flex justify-center bg-white mt2">
+              <pre class="ma0">
+                <div class="system-font bg-black white ph4 pt2 pb4 mw13 overflow-x-scroll">
+&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"system-font db db pb2 mw11 ba br1 border-grey"</span>&gt;
+  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"pa3"</span>&gt;
+    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt2 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2 lh-body mt0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
+   &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
+  &lt;/<span class="blue">div</span>&gt;
+&lt;/<span class="blue">div</span>&gt;</div>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 <div class="font-antialiased pt4 pb5 bb border-grey cf">
   <div class="fl ml4">
     <p class="system-font fs2">Profile with detail</p>

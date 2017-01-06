@@ -431,5 +431,6 @@
 .button-press:active     { position: relative; top: 2px; }
 .shake:focus             { animation-name: shake; animation-duration: 500ms; animation-fill-mode: both; }
 @keyframes shake { from, to { transform: translate3d(0, 0, 0); } 20%, 60% { transform: translate3d(-5px, 0, 0); } 40%, 80% { transform: translate3d(5px, 0, 0); } }
-.hover-bg-grey-grow:hover  { background-color: #DDDDDD; transition: 200ms ease-out; transform: scale(1.2); }
+.hover-bg-grey-grow1:hover  { background-color: #DDDDDD; transition: 200ms ease-out; transform: scale(1.1); }
+.hover-bg-grey-grow2:hover  { background-color: #DDDDDD; transition: 200ms ease-out; transform: scale(1.2); }
 .hover-bg-grey:hover { background-color: #DDDDDD; transition: 200ms ease-out; }
