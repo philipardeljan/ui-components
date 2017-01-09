@@ -60,6 +60,9 @@
 .bw5 { border-width: 4rem; }
 .bw6 { border-width: 6rem; }
 
+/* box-sizing */
+.border-box { box-sizing: border-box; }
+
 /* box-shadow */
 .shadow { box-shadow: 0 1px 2px 2px rgba( 0, 0, 0, .1 ); }
 
