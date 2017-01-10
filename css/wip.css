@@ -292,6 +292,7 @@
 /* min-width */
 .min-width-1  { min-width: 1rem; }
 .min-width-2  { min-width: 1.5rem; }
+.min-width3   { min-width: 7rem; }
 
 /* overflow */
 .overflow-visible     { overflow: visible; }
