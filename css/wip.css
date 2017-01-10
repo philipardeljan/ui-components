@@ -403,12 +403,6 @@
 .v-top  { vertical-align: top; }
 .v-btm  { vertical-align: bottom; }
 
-/* visibility */
-.hidden     { visibility: hidden; }
-
-/* white-space */
-.ws-nowrap { white-space: nowrap; }
-
 /* width */
 .w1            { width: 1rem; }
 .w2            { width: 2rem; }
