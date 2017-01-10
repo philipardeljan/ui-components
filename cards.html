@@ -8,228 +8,38 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/wip.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.flip.min.js"></script>
-    <script>
-      $(function($) {
-      $("#card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8, #card9, #card10, #card11, #card12, #card13, #card14, #card15, #card16, #card17, #card18").flip({
-      trigger: 'manual',
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true1").click(function(){
-      $("#card1").flip(true);
-      });
-
-      $("#toggle-false1").click(function(){
-      $("#card1").flip(false);
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true2").click(function(){
-      $("#card2").flip(true);
-      });
-
-      $("#toggle-false2").click(function(){
-      $("#card2").flip(false);
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true3").click(function(){
-      $("#card3").flip(true);
-      });
-
-      $("#toggle-false3").click(function(){
-      $("#card3").flip(false);
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true4").click(function(){
-      $("#card4").flip(true);
-      });
-
-      $("#toggle-false4").click(function(){
-      $("#card4").flip(false);
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true5").click(function(){
-      $("#card5").flip(true);
-      });
-
-      $("#toggle-false5").click(function(){
-      $("#card5").flip(false);
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true6").click(function(){
-      $("#card6").flip(true);
-      });
-
-      $("#toggle-false6").click(function(){
-      $("#card6").flip(false);
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true7").click(function(){
-      $("#card7").flip(true);
-      });
-
-      $("#toggle-false7").click(function(){
-      $("#card7").flip(false);
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true8").click(function(){
-      $("#card8").flip(true);
-      });
-
-      $("#toggle-false8").click(function(){
-      $("#card8").flip(false);
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true9").click(function(){
-      $("#card9").flip(true);
-      });
-
-      $("#toggle-false9").click(function(){
-      $("#card9").flip(false);
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true10").click(function(){
-      $("#card10").flip(true);
-      });
-
-      $("#toggle-false10").click(function(){
-      $("#card10").flip(false);
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true11").click(function(){
-      $("#card11").flip(true);
-      });
-
-      $("#toggle-false11").click(function(){
-      $("#card11").flip(false);
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true12").click(function(){
-      $("#card12").flip(true);
-      });
-
-      $("#toggle-false12").click(function(){
-      $("#card12").flip(false);
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true13").click(function(){
-      $("#card13").flip(true);
-      });
-
-      $("#toggle-false13").click(function(){
-      $("#card13").flip(false);
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true14").click(function(){
-      $("#card14").flip(true);
-      });
-
-      $("#toggle-false14").click(function(){
-      $("#card14").flip(false);
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true15").click(function(){
-      $("#card15").flip(true);
-      });
-
-      $("#toggle-false15").click(function(){
-      $("#card15").flip(false);
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true16").click(function(){
-      $("#card16").flip(true);
-      });
-
-      $("#toggle-false16").click(function(){
-      $("#card16").flip(false);
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true17").click(function(){
-      $("#card17").flip(true);
-      });
-
-      $("#toggle-false17").click(function(){
-      $("#card17").flip(false);
-      });
-      });
-
-      $(function($) {
-      $("#toggle-true18").click(function(){
-      $("#card18").flip(true);
-      });
-
-      $("#toggle-false18").click(function(){
-      $("#card18").flip(false);
-      });
-      });
-    </script>
   </head>
 
   <body class="ma0">
-    <div class="system-font bt border-grey cf">
-        <div class="fl system-font bg-silver br border-grey pa4">
-          <a href="/" class="db fs4 tdn blue pointer mt0 mb2">🐆 <span class="fs2 pl1">Home </span></a>
-          <a href="/" class="db fs3 tdn blue pointer mt0 mb2">💻 <span class="fs2 pl2">Github</span></a>
-          <a href="/" class="db fs3 tdn blue pointer ma0"> 📄 <span class="fs2 pl2">Download CSS</span></a>
-        </div>
-        <div class="tc mr5 pt4 pl4">
-          <h1 class="fs6 fw400 mt3 mb0 pt1">Cards</h1>
-          <p class="mv0">18</p>
-        </div>
+    <div class="db center tc system-font">
+      <div class="bg-silver pa4">
+        <a href="/" class="di fs4 tdn blue pointer button-press mh3">🏇<span class="fs2 pl1">Home </span></a>
+        <a href="#" class="di tdn blue pointer button-press mh3 mb3"><img class="w1" src="/images/octocat.png"/> Github</a>
+        <a href="https://twitter.com/philipardeljan" class="tdn blue pointer button-press mh3"><span class="fs3"> 👋</span> Twitter</a>
+      </div>
+      <div class="tc pt3">
+        <h1 class="fs6 fw400 mv3 pt1 pb3">Cards</h1>
+      </div>
     </div>
-    <div id="card1 pb6">
-      <div class="border-grey pb6">
-          <p class="system-font fs2 tc fs3 mv0 pv4">Simple border</p>
-          <div class="db center ba border-grey br2 mw14">
-            <div class="font-antialiased">
-              <div class="flex justify-center mv4">
-                <div class="system-font mw11 pb1 ba br1 border-grey">
-                  <div class="pa3">
-                    <p class="fs5 mv1">Sea ice disaster</p>
-                    <p class="fs2 lh-body mt2 mb3">Rising sea levels are causing much anguish in the scientific community.</p>
-                    <a href="#" class="tdn blue">Read more</a>
-                  </div>
-                </div>
-              </div>
+    <!--#1 card component wrapper start-->
+    <div class="pb5">
+      <div class="db center ba border-grey br2 mw14">
+        <p class="system-font fs2 grey pt3 pl3 ma0">Example</p>
+        <div class="flex justify-center mt4 mb5 pt2">
+          <!--#1 card component start-->
+          <div class="system-font font-antialiased mw11 pb1 ba br2 border-grey">
+            <div class="pa3">
+              <p class="fs5 mv1">Sea ice disaster</p>
+              <p class="fs2 lh-body mt2 mb3">Rising sea levels are causing much anguish in the scientific community.</p>
+              <a href="#" class="tdn blue button-press">Read more</a>
             </div>
-            <div class="bg-silver bt border-grey">
-              <pre class="ws-normal ma0">
-                <div class="system-font bg-silver ws-prewrap ph4 pb4">
-&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"system-font db db pb2 mw11 ba br1 border-grey"</span>&gt;
+          </div>
+          <!--#1 card component end-->
+        </div>
+        <div class="bg-silver bt border-grey">
+          <p class="system-font fs2 grey pt3 pl3 ma0">Code</p>
+          <pre class="ws-normal ma0">
+                <div class="system-font bg-silver ws-prewrap pt2 ph3 pb3">&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"system-font db db pb2 mw11 ba br1 border-grey"</span>&gt;
   &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"pa3"</span>&gt;
     &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt2 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
     &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2 lh-body mt0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
@@ -240,43 +50,7 @@
             </div>
           </div>
       </div>
-    </div>
-
-    <div id="card1">
-      <div class="pb4">
-        <div class="front">
-          <div class="font-antialiased pt4">
-            <p class="system-font fs2 tc fs3 mv0">Simple border - <span class="fs2 system-font blue pointer button-press" id="toggle-true1">View code</span></p>
-            <div class="flex justify-center mt4">
-              <div class="system-font mw11 pb1 ba br1 border-grey">
-                <div class="pa3">
-                  <p class="fs5 mv1">Sea ice disaster</p>
-                  <p class="fs2 lh-body mt2 mb3">Rising sea levels are causing much anguish in the scientific community.</p>
-                  <a href="#" class="tdn blue">Read more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="back">
-          <div class="font-antialiased pt4">
-            <p class="system-font fs2 tc fs3 mv0">Code - <span class="fs2 system-font blue pointer button-press" id="toggle-false1">View UI</span></p>
-            <div class="flex justify-center mt2">
-              <pre class="ma0">
-                <div class="system-font bg-black white ph4 pt2 pb4 mw13 overflow-x-scroll">
-&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"system-font db db pb2 mw11 ba br1 border-grey"</span>&gt;
-  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"pa3"</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt2 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2 lh-body mt0 mb2"</span>&gt;Rising sea levels are causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
-   &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
-  &lt;/<span class="blue">div</span>&gt;
-&lt;/<span class="blue">div</span>&gt;</div>
-              </pre>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--#1 card component wrapper end-->
 
     <div id="card2">
       <div class="bb border-grey pb3">
