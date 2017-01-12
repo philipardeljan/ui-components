@@ -13,7 +13,6 @@
 /*  background-images */
 .bg-center    { background-repeat: no-repeat; background-position: center center; }
 .cover        { background-size: cover; }
-.bg-fade70    { background-color: rgba( 85, 85, 85, .7 ); }
 
 /* border-radius */
 .br0          { border-radius: 0; }
@@ -177,15 +176,9 @@
 .italic { font-style: italic; }
 
 /* font-weight */
-.fw100 { font-weight: 100; }
-.fw200 { font-weight: 200; }
-.fw300 { font-weight: 300; }
 .fw400 { font-weight: 400; }
 .fw500 { font-weight: 500; }
-.fw600 { font-weight: 600; }
 .fw700 { font-weight: 700; }
-.fw800 { font-weight: 800; }
-.fw900 { font-weight: 900; }
 
 /* height */
 .h1 { height: 1rem; }
@@ -288,26 +281,13 @@
 .mw16     { max-width: 96rem; }
 .mw100    { max-width: 100%; }
 
-/* min-height */
-
 /* min-width */
-.min-width-1  { min-width: 1rem; }
-.min-width-2  { min-width: 1.5rem; }
-.min-width3   { min-width: 7rem; }
+.min-width1   { min-width: 1.5rem; }
+.min-width2   { min-width: 7rem; }
 
 /* overflow */
-.overflow-visible     { overflow: visible; }
-.overflow-hidden      { overflow: hidden; }
-.overflow-scroll      { overflow: scroll; }
 .overflow-auto        { overflow: auto; }
-.overflow-x-visible   { overflow-x: visible; }
-.overflow-x-hidden    { overflow-x: hidden; }
 .overflow-x-scroll    { overflow-x: scroll; }
-.overflow-x-auto      { overflow-x: auto; }
-.overflow-y-visible   { overflow-y: visible; }
-.overflow-y-hidden    { overflow-y: hidden; }
-.overflow-y-scroll    { overflow-y: scroll; }
-.overflow-y-auto      { overflow-y: auto; }
 
 /* padding */
 .pa0 { padding: 0; }
@@ -381,29 +361,16 @@
 /* position */
 .relative    { position: relative; }
 .absolute    { position: absolute; }
-.fixed       { position: fixed; }
 
 /* text-align */
 .tl   { text-align: left; }
-.tr   { text-align: right; }
 .tc   { text-align: center; }
 
 /* text-transform */
 .ttu  { text-transform: uppercase; }
 
 /* text-decoration */
-.tdn                      { text-decoration: none; }
-.tdn:link, .tdn:visited   { text-decoration: none; }
-.tdn:hover                { text-decoration: none; }
-.tdn:active               { text-decoration: none; }
-.tdn:focus                { text-decoration: none; }
-.tdu                      { text-decoration: underline; }
-
-/* vertical-align */
-.v-base { vertical-align: baseline; }
-.v-mid  { vertical-align: middle; }
-.v-top  { vertical-align: top; }
-.v-btm  { vertical-align: bottom; }
+.tdn, .tdn:link, .tdn:visited, .tdn:hover, .tdn:active, .tdn:focus   { text-decoration: none; }
 
 /* white-space */
 .ws-normal  { white-space: normal; }
@@ -439,50 +406,3 @@
 @keyframes shake { from, to { transform: translate3d(0, 0, 0); } 20%, 60% { transform: translate3d(-5px, 0, 0); } 40%, 80% { transform: translate3d(5px, 0, 0); } }
 .hover-bg-grey-grow:hover  { background-color: #EEEEEE; transition: 100ms ease-out; transform: scale(1.2); }
 .hover-bg-grey:hover { background-color: #EEEEEE; transition: 100ms ease-out; }
-
-
-/* Tooltip container */
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 300px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-
-    /* Position the tooltip text */
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -160px;
-    padding: 10px;
-    /* Fade in tooltip */
-    opacity: 0;
-    transition: opacity 300ms;
-}
-
-/* Tooltip arrow */
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #333 transparent transparent transparent;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
