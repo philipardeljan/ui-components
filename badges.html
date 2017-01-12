@@ -1,78 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <title>Badges - UI Components</title>
-        <meta name="author" content="">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/wip.css">
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Badges - UI Components</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/ui-components-v0.1.css">
+  </head>
 
-    <body class="ma0">
-        <div class="pv4">
-            <h1 class="fs6 fw400 system-font ml4 mv0">Badges</h1>
-            <div class="system-font ml4">
-                <p class="mt2 mb0">Many words here for your enjoyment.</p>
-            </div>
+  <body class="font-antialiased ma0">
+    <div class="db tc center system-font">
+      <div class="ws-nowrap overflow-auto bg-silver bb border-silver pa3">
+        <a href="/" class="di tdn blue pointer button-press mh2">Home</a>
+        <a href="/about.html" class="di tdn blue pointer button-press mh2">About</a>
+        <a href="#" class="di tdn blue pointer button-press mh2">Github</a>
+        <a href="https://twitter.com/philipardeljan" class="tdn blue pointer button-press mh2">Twitter</a>
+        <a href="#" class="tdn blue pointer button-press mh2">ui-components-v0.1.css <span class="fstiny">(4kb)</span></a>
+      </div>
+        <h1 class="fs6 fw400 mv4 pt1 pb3">Badges</h1>
+      </div>
+
+    <!--#1 badge component wrapper start-->
+    <div class="pb6">
+      <div class="db center ba border-grey br2 mw14">
+        <p class="system-font fs2 grey pt3 pl3 ma0">Example</p>
+        <div class="flex justify-center mt4 mb5 pt2">
+          <!--#1 badge component start-->
+          <span class="dib min-width-2 system-font tc fw700 br4 bg-blue white pointer button-press pa2">14</span>
+          <!--#1 badge component end-->
         </div>
-        <div class="font-antialiased pt4 pb5 bt border-grey cf">
-            <div class="fl ml4">
-                <p class="system-font fs2">Solid background</p>
-                <span class="dib min-width-2 system-font tc fw700 br4 bg-blue white pointer button-press pa2">14</span>
+        <div class="bg-silver bt border-grey">
+          <p class="system-font fs2 grey pt3 pl3 ma0">Code</p>
+          <pre class="ws-normal ma0">
+            <div class="system-font bg-silver ws-prewrap pt2 ph3 pb3">&lt;<span class="blue">button</span> <span class="green">class</span>=<span class="orange">"fs2 system-font bg-blue br2 bw0 pointer button-press ph3"</span>&gt;
+    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"self-center white mv2 pv1"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+&lt;/<span class="blue">div</span>&gt;</div>
+              </pre>
             </div>
-            <div class="fl ml4">
-                <p class="system-font fs2">Code</p>
-                <div class="bg-black white mr4 ph4 pv2 mw6 overflow-x-scroll">
-                    <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 system-font db fl pb2 mw5 ba br1 border-blue"</span>&gt;
-  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2 dark-grey mt0 mh0 mb2"</span>&gt;Rising sea levels is causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
-  &lt;/<span class="blue">div</span>&gt;
-&lt;/<span class="blue">div</span>&gt;</pre>
-                </div>
-            </div>
+          </div>
+      </div>
+    <!--#1 badge component wrapper end-->
+
+    <!--#2 badge component wrapper start-->
+    <div class="pb6">
+      <div class="db center ba border-grey br2 mw14">
+        <p class="system-font fs2 grey pt3 pl3 ma0">Example</p>
+        <div class="flex justify-center mt4 mb5 pt2">
+          <!--#2 badge component start-->
+          <span class="dib min-width-2 system-font tc fw700 br4 shadow pointer button-press pa2">14</span>
+          <!--#2 badge component end-->
         </div>
-        <div class="font-antialiased pt4 pb5 bt border-grey cf">
-            <div class="fl ml4">
-                <p class="system-font fs2">Shadow version</p>
-                <span class="dib min-width-2 system-font tc fw700 br4 shadow pointer button-press pa2">14</span>
+        <div class="bg-silver bt border-grey">
+          <p class="system-font fs2 grey pt3 pl3 ma0">Code</p>
+          <pre class="ws-normal ma0">
+            <div class="system-font bg-silver ws-prewrap pt2 ph3 pb3">&lt;<span class="blue">button</span> <span class="green">class</span>=<span class="orange">"fs2 system-font bg-blue br2 bw0 pointer button-press ph3"</span>&gt;
+    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"self-center white mv2 pv1"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+&lt;/<span class="blue">div</span>&gt;</div>
+              </pre>
             </div>
-            <div class="fl ml4">
-                <p class="system-font fs2">Code</p>
-                <div class="bg-black white mr4 ph4 pv2 mw6 overflow-x-scroll">
-                    <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 system-font db fl pb2 mw5 ba br1 border-blue"</span>&gt;
-  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2 dark-grey mt0 mh0 mb2"</span>&gt;Rising sea levels is causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
-  &lt;/<span class="blue">div</span>&gt;
-&lt;/<span class="blue">div</span>&gt;</pre>
-                </div>
-            </div>
-        </div>
-        <div class="font-antialiased pt4 pb5 bt bb border-grey cf">
-            <div class="fl ml4">
-                <p class="system-font fs2">Inline</p>
+          </div>
+      </div>
+    <!--#2 badge component wrapper end-->
+
+    <!--#3 badge component wrapper start-->
+    <div class="pb6">
+      <div class="db center ba border-grey br2 mw14">
+        <p class="system-font fs2 grey pt3 pl3 ma0">Example</p>
+        <div class="flex justify-center mt4 mb5 pt2">
+          <!--#3 badge component start-->
                 <a href="#" class="system-font tdn blue pointer button-press mr2 ph1">Profile</a>
                 <a href="#" class="system-font tdn blue pointer button-press mr2 ph1">News</a>
                 <a href="#" class="system-font tdn blue pointer button-press ph1">Notifications<span class="dib min-width-2 tc fw700 br4 shadow pointer pa2 ml2 mr2">14</span></a>
                 <a href="#" class="system-font tdn blue pointer button-press ph1">Mail<span class="dib min-width-2 tc fw700 br4 shadow pointer pa2 ml2 mr2">7</span></a>
-            </div>
-            <div class="fl ml4">
-                <p class="system-font fs2">Code</p>
-                <div class="bg-black white mr4 ph4 pv2 mw6 overflow-x-scroll">
-                    <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 system-font db fl pb2 mw5 ba br1 border-blue"</span>&gt;
-  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2 dark-grey mt0 mh0 mb2"</span>&gt;Rising sea levels is causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
-  &lt;/<span class="blue">div</span>&gt;
-&lt;/<span class="blue">div</span>&gt;</pre>
-                </div>
-            </div>
+          <!--#3 badge component end-->
         </div>
+        <div class="bg-silver bt border-grey">
+          <p class="system-font fs2 grey pt3 pl3 ma0">Code</p>
+          <pre class="ws-normal ma0">
+            <div class="system-font bg-silver ws-prewrap pt2 ph3 pb3">&lt;<span class="blue">button</span> <span class="green">class</span>=<span class="orange">"fs2 system-font bg-blue br2 bw0 pointer button-press ph3"</span>&gt;
+    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"self-center white mv2 pv1"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+&lt;/<span class="blue">div</span>&gt;</div>
+              </pre>
+            </div>
+          </div>
+      </div>
+    <!--#3 badge component wrapper end-->
+
     </body>
 </html>

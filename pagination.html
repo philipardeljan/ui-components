@@ -7,96 +7,109 @@
     <meta name="author" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/wip.css">
+    <link rel="stylesheet" href="css/ui-components-v0.1.css">
   </head>
 
-  <body class="ma0">
-    <div class="pv4">
-      <h1 class="fs6 fw400 system-font ml4 mv0">Pagination</h1>
-      <div class="system-font ml4">
-        <p class="mt2 mb0">Many words here for your enjoyment.</p>
+  <body class="font-antialiased ma0">
+    <div class="db tc center system-font">
+      <div class="ws-nowrap overflow-auto bg-silver bb border-silver pa3">
+        <a href="/" class="di tdn blue pointer button-press mh2">Home</a>
+        <a href="/about.html" class="di tdn blue pointer button-press mh2">About</a>
+        <a href="#" class="di tdn blue pointer button-press mh2">Github</a>
+        <a href="https://twitter.com/philipardeljan" class="tdn blue pointer button-press mh2">Twitter</a>
+        <a href="#" class="tdn blue pointer button-press mh2">ui-components-v0.1.css <span class="fstiny">(4kb)</span></a>
       </div>
+      <h1 class="fs6 fw400 mv4 pt1 pb3">Pagination</h1>
     </div>
-    <div class="font-antialiased pt4 pb5 bt bb border-grey cf">
-      <div class="fl ml4">
-        <p class="system-font fs2">Standard pagination</p>
-        <nav class="dt system-font border-collapse">
-          <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">
-            <span>&laquo;</span>
-          </a>
-          <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pv2 ph3">1</a>
-          <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">2</a>
-          <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">3</a>
-          <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">4</a>
-          <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">5</a>
-          <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">
-            <span>&raquo;</span>
-          </a>
-        </nav>
-      </div>
-      <div class="fl ml4">
-        <p class="system-font fs2">Code</p>
-        <div class="bg-black white mr4 ph4 pv2 mw6 overflow-x-scroll">
-          <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 system-font db fl pb2 mw5 ba br1 border-blue"</span>&gt;
-  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2 dark-grey mt0 mh0 mb2"</span>&gt;Rising sea levels is causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
-  &lt;/<span class="blue">div</span>&gt;
-&lt;/<span class="blue">div</span>&gt;</pre>
+
+    <!--#1 pagination component wrapper start-->
+    <div class="pb6">
+      <div class="db center ba border-grey br2 mw14">
+        <p class="system-font fs2 grey pt3 pl3 ma0">Example</p>
+        <div class="flex justify-center mt4 mb5 pt2">
+          <!--#1 pagination component start-->
+          <nav class="dt system-font border-collapse">
+            <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">
+              <span>&laquo;</span>
+            </a>
+            <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pv2 ph3">1</a>
+            <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">2</a>
+            <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">3</a>
+            <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">4</a>
+            <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">5</a>
+            <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">
+              <span>&raquo;</span>
+            </a>
+          </nav>
+          <!--#1 pagination component end-->
         </div>
+        <div class="bg-silver bt border-grey">
+          <p class="system-font fs2 grey pt3 pl3 ma0">Code</p>
+          <pre class="ws-normal ma0">
+            <div class="system-font bg-silver ws-prewrap pt2 ph3 pb3">&lt;<span class="blue">button</span> <span class="green">class</span>=<span class="orange">"fs2 system-font bg-blue br2 bw0 pointer button-press ph3"</span>&gt;
+    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"self-center white mv2 pv1"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+&lt;/<span class="blue">div</span>&gt;</div>
+              </pre>
+            </div>
+          </div>
       </div>
-    </div>
-    <div class="font-antialiased pt4 pb5 bb border-grey cf">
-      <div class="fl ml4">
-        <p class="system-font fs2">Active page</p>
-        <nav class="dt system-font border-collapse">
-          <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">
-            <span>&laquo;</span>
-          </a>
-          <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pv2 ph3">1</a>
-          <a href="#" class="dtcell ba border-blue tdn bg-blue white pointer pa2 ph3">2</a>
-          <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">3</a>
-          <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">4</a>
-          <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">5</a>
-          <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">
-            <span>&raquo;</span>
-          </a>
-        </nav>
-      </div>
-      <div class="fl ml4">
-        <p class="system-font fs2">Code</p>
-        <div class="bg-black white mr4 ph4 pv2 mw6 overflow-x-scroll">
-          <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 system-font db fl pb2 mw5 ba br1 border-blue"</span>&gt;
-  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2 dark-grey mt0 mh0 mb2"</span>&gt;Rising sea levels is causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
-  &lt;/<span class="blue">div</span>&gt;
-&lt;/<span class="blue">div</span>&gt;</pre>
+    <!--#1 pagination component wrapper end-->
+
+    <!--#2 pagination component wrapper start-->
+    <div class="pb6">
+      <div class="db center ba border-grey br2 mw14">
+        <p class="system-font fs2 grey pt3 pl3 ma0">Example</p>
+        <div class="flex justify-center mt4 mb5 pt2">
+          <!--#2 pagination component start-->
+          <nav class="dt system-font border-collapse">
+            <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">
+              <span>&laquo;</span>
+            </a>
+            <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pv2 ph3">1</a>
+            <a href="#" class="dtcell ba border-blue tdn bg-blue white pointer pa2 ph3">2</a>
+            <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">3</a>
+            <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">4</a>
+            <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">5</a>
+            <a href="#" class="dtcell ba border-grey tdn blue pointer hover-bg-grey-grow pa2 ph3">
+              <span>&raquo;</span>
+            </a>
+          </nav>
+          <!--#2 pagination component end-->
         </div>
+        <div class="bg-silver bt border-grey">
+          <p class="system-font fs2 grey pt3 pl3 ma0">Code</p>
+          <pre class="ws-normal ma0">
+            <div class="system-font bg-silver ws-prewrap pt2 ph3 pb3">&lt;<span class="blue">button</span> <span class="green">class</span>=<span class="orange">"fs2 system-font bg-blue br2 bw0 pointer button-press ph3"</span>&gt;
+    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"self-center white mv2 pv1"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+&lt;/<span class="blue">div</span>&gt;</div>
+              </pre>
+            </div>
+          </div>
       </div>
-    </div>
-    <div class="font-antialiased pt4 pb5 bb border-grey cf">
-      <div class="fl ml4">
-        <p class="system-font fs2">Next/previous control</p>
-        <nav class="system-font pt2">
-          <a href="#" class="ba border-grey br-pill tdn blue pointer hover-bg-grey button-press pa2 ph3">Previous</a>
-          <a href="#" class="ba border-grey br-pill tdn blue pointer hover-bg-grey button-press pa2 ph3">Next</a>
-        </nav>
-      </div>
-      <div class="fl ml4">
-        <p class="system-font fs2">Code</p>
-        <div class="bg-black white mr4 ph4 pv2 mw6 overflow-x-scroll">
-          <pre>&lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"ml4 system-font db fl pb2 mw5 ba br1 border-blue"</span>&gt;
-  &lt;<span class="blue">div</span> <span class="green">class</span>=<span class="orange">"bt bw4 border-blue br1 pa2"</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs5 pb2 mt1 mb0"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"fs2 dark-grey mt0 mh0 mb2"</span>&gt;Rising sea levels is causing much anguish in the scientific community.&lt;/<span class="blue">p</span>&gt;
-    &lt;<span class="blue">a</span> <span class="green">href</span>=<span class="orange">"#"</span> <span class="green">class</span>=<span class="orange">"tdn blue"</span>&gt;Read more&lt;/<span class="blue">a</span>&gt;
-  &lt;/<span class="blue">div</span>&gt;
-&lt;/<span class="blue">div</span>&gt;</pre>
+    <!--#2 pagination component wrapper end-->
+
+    <!--#3 pagination component wrapper start-->
+    <div class="pb6">
+      <div class="db center ba border-grey br2 mw14">
+        <p class="system-font fs2 grey pt3 pl3 ma0">Example</p>
+        <div class="flex justify-center mt4 mb5 pt2">
+          <!--#3 pagination component start-->
+          <nav class="system-font pt2">
+            <a href="#" class="ba border-grey br-pill tdn blue pointer hover-bg-grey button-press pa2 ph3">Previous</a>
+            <a href="#" class="ba border-grey br-pill tdn blue pointer hover-bg-grey button-press pa2 ph3">Next</a>
+          </nav>
+          <!--#3 pagination component end-->
         </div>
+        <div class="bg-silver bt border-grey">
+          <p class="system-font fs2 grey pt3 pl3 ma0">Code</p>
+          <pre class="ws-normal ma0">
+            <div class="system-font bg-silver ws-prewrap pt2 ph3 pb3">&lt;<span class="blue">button</span> <span class="green">class</span>=<span class="orange">"fs2 system-font bg-blue br2 bw0 pointer button-press ph3"</span>&gt;
+    &lt;<span class="blue">p</span> <span class="green">class</span>=<span class="orange">"self-center white mv2 pv1"</span>&gt;Sea ice disaster&lt;/<span class="blue">p</span>&gt;
+&lt;/<span class="blue">div</span>&gt;</div>
+              </pre>
+            </div>
+          </div>
       </div>
-    </div>
+    <!--#3 pagination component wrapper end-->
   </body>
 </html>
