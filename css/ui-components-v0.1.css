@@ -158,7 +158,6 @@
 /* font-family */
 .system-font  { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", sans-serif; }
 .monospace    { font-family: "Inconsolata", "Consolas", "Monaco", monospace; }
-.windows-emoji { font-family: "Segoe UI Emoji"; }
 
 /* font-size */
 .fstiny {font-size: .7rem; }
