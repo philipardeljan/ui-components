@@ -1,5 +1,8 @@
 /* @media */
 
+/* font-rendering */
+.font-antialiased        { -webkit-font-smoothing: antialiased; }
+
 /* background */
 .bg-black     { background-color: #000000; }
 .bg-grey      { background-color: #999999; }
@@ -9,8 +12,6 @@
 .bg-orange    { background-color: #F6A623; }
 .bg-green     { background-color: #6FC214; }
 .bg-white     { background-color: #FFFFFF; }
-
-/*  background-images */
 
 /* border-radius */
 .br0          { border-radius: 0; }
@@ -54,55 +55,18 @@
 /* box-shadow */
 .shadow { box-shadow: 0 1px 2px 2px rgba( 0, 0, 0, .1 ); }
 
-/* top */
-.top0 { top: 0; }
-.top1 { top: 1rem; }
-.top2 { top: 2rem; }
-.top3 { top: 3rem; }
-.top4 { top: 4rem; }
-
-.top-1 { top: -1rem; }
-.top-2 { top: -2rem; }
-.top-3 { top: -3rem; }
-.top-4 { top: -4rem; }
-
 /* right */
-.right0 { right: 0; }
-.right1 { right: 1rem; }
 .right2 { right: 2rem; }
-.right3 { right: 3rem; }
-.right4 { right: 4rem; }
-
-.right-1 { right: -1rem; }
-.right-2 { right: -2rem; }
-.right-3 { right: -3rem; }
-.right-4 { right: -4rem; }
 
 /* bottom */
-.bottom0 { bottom: 0; }
-.bottom1 { bottom: 1rem; }
-.bottom2 { bottom: 2rem; }
-.bottom3 { bottom: 3rem; }
-.bottom4 { bottom: 4rem; }
-
-.bottom-1 { bottom: -1rem; }
-.bottom-2 { bottom: -2rem; }
-.bottom-3 { bottom: -3rem; }
-.bottom-4 { bottom: -4rem; }
+.bottom0   { bottom: 0; }
+.bottom2   { bottom: 2rem; }
+.bottom-1  { bottom: -1rem; }
 
 /* left */
-.left0 { left: 0; }
-.left1 { left: 1rem; }
-.left2 { left: 2rem; }
-.left3 { left: 3rem; }
-.left4 { left: 4rem; }
+.left1     { left: 1rem; }
 
-.left-1 { left: -1rem; }
-.left-2 { left: -2rem; }
-.left-3 { left: -3rem; }
-.left-4 { left: -4rem; }
-
-/*  Nicolas Gallagher Clearfix  http://nicolasgallagher.com/micro-clearfix-hack/  */
+/* clearfix */
 .cf:before, .cf:after   { content: " "; display: table; }
 .cf:after               { clear: both; }
 .cf                     { *zoom: 1; }
@@ -155,14 +119,8 @@
 .fs4    { font-size: 1.5rem; }
 .fs5    { font-size: 1.75rem; }
 .fs6    { font-size: 2rem; }
-.fs7    { font-size: 2.25rem; }
-.fs8    { font-size: 2.5rem; }
-.fs9    { font-size: 2.75rem; }
 .fs10   { font-size: 3rem; }
 .fs11   { font-size: 5rem; }
-
-/* font-style */
-.italic { font-style: italic; }
 
 /* font-weight */
 .fw400 { font-weight: 400; }
@@ -388,8 +346,7 @@
 .w-90          { width: 90%; }
 .w-100         { width: 100%; }
 
-/* misc */
-.font-antialiased        { -webkit-font-smoothing: antialiased; }
+/* actions, hover states and misc */
 .button-press:active     { position: relative; top: 2px; }
 .shake:focus             { animation-name: shake; animation-duration: 500ms; animation-fill-mode: both; }
 @keyframes shake { from, to { transform: translate3d(0, 0, 0); } 20%, 60% { transform: translate3d(-5px, 0, 0); } 40%, 80% { transform: translate3d(5px, 0, 0); } }
