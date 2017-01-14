@@ -6,6 +6,7 @@
 /* background */
 .bg-black     { background-color: #000000; }
 .bg-grey      { background-color: #999999; }
+.bg-purple    { background-color: #9012FE; }
 .bg-silver    { background-color: #EEEEEE; }
 .bg-blue      { background-color: #4990E2; }
 .bg-red       { background-color: #D0011B; }
@@ -33,6 +34,7 @@
 /* border-color */
 .border-black    { border-color: #000000; }
 .border-grey     { border-color: #999999; }
+.border-purple   { border-color: #9012FE; }
 .border-silver   { border-color: #CCCCCC; }
 .border-blue     { border-color: #4990E2; }
 .border-red      { border-color: #D0011B; }
