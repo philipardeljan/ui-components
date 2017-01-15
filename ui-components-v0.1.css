@@ -337,21 +337,20 @@
 .ws-prewrap { white-space: pre-wrap; }
 
 /* width */
-.w1 { width: 1rem; }
-.w2 { width: 2rem; }
-.w3 { width: 3rem; }
-.w4 { width: 4rem; }
-.w5 { width: 5rem; }
-.w6 { width: 6rem; }
-.w7 { width: 8rem; }
-.w8 { width: 9rem; }
-.w9 { width: 10rem; }
-.w10 { width: 14rem; }
-.w11 { width: 16rem; }
-.w12 { width: 20rem; }
-
-.w33pc         { width: 33%; }
-.w100pc        { width: 100%; }
+.w1        { width: 1rem; }
+.w2        { width: 2rem; }
+.w3        { width: 3rem; }
+.w4        { width: 4rem; }
+.w5        { width: 5rem; }
+.w6        { width: 6rem; }
+.w7        { width: 8rem; }
+.w8        { width: 9rem; }
+.w9        { width: 10rem; }
+.w10       { width: 14rem; }
+.w11       { width: 16rem; }
+.w12       { width: 20rem; }
+.w33pc     { width: 33%; }
+.w100pc    { width: 100%; }
 
 /* actions, hover states and misc */
 .button-press:active     { position: relative; top: 2px; }
