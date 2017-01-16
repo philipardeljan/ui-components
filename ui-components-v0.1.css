@@ -1,5 +1,3 @@
-/* @media */
-
 /* font-rendering */
 .font-antialiased        { -webkit-font-smoothing: antialiased; }
 
@@ -352,9 +350,19 @@
 .w33pc     { width: 33%; }
 .w100pc    { width: 100%; }
 
-/* actions, hover states and misc */
-.button-press:active     { position: relative; top: 2px; }
-.shake-red-border:focus             { animation-name: shake; animation-duration: 500ms; animation-fill-mode: both; border-color: red; }
+/* Actions and hover states */
+.button-press:active  { position: relative; top: 2px; }
+.shake-red-border:focus  { animation-name: shake; animation-duration: 500ms; animation-fill-mode: both; border-color: red; }
 @keyframes shake { from, to { transform: translate3d(0, 0, 0); } 20%, 60% { transform: translate3d(-5px, 0, 0); } 40%, 80% { transform: translate3d(5px, 0, 0); } }
 .hover-bg-grey-grow:hover  { background-color: #EEEEEE; transition: 100ms ease-out; transform: scale(1.2); }
-.hover-bg-grey:hover { background-color: #EEEEEE; transition: 100ms ease-out; }
+.hover-bg-grey:hover  { background-color: #EEEEEE; transition: 100ms ease-out; }
+
+/* @media */
+@media (max-width: 48em) {
+  .bn-s { border: 0; }
+  .db-s { display: block; }
+  .hover-bg-white-s:hover { background-color: #FFFFFF; }
+  .ma0-s { margin: 0; }
+  .pa0-s { padding: 0; }
+  .ph1-s { padding-left: 1rem; padding-right: 1rem; }
+}
