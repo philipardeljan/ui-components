@@ -1,4 +1,4 @@
-# UI Components 💅
+# UI Components 🏇
 * A functional CSS component library
 * Focused on prototyping/designing in the browser
 * 2kb of CSS
