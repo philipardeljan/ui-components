@@ -1,6 +1,9 @@
 # UI Components
 A functional CSS component library
-Focused on prototyping/designing in the browser. 2kb of CSS
+
+Focused on prototyping/designing in the browser
+
+2kb of CSS
 
 ## How does it work?
 * Download the CSS
