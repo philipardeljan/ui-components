@@ -62,6 +62,7 @@
 
 /* bottom */
 .bottom0   { bottom: 0; }
+.bottom1   { bottom: 1rem; }
 .bottom2   { bottom: 2rem; }
 .bottom-1  { bottom: -1rem; }
 .bottom-2  { bottom: -2rem; }
@@ -350,12 +351,13 @@
 .w33pc     { width: 33%; }
 .w100pc    { width: 100%; }
 
-/* Actions and hover states */
+/* Actions, hover states and misc */
 .button-press:active  { position: relative; top: 2px; }
 .shake-red-border:focus  { animation-name: shake; animation-duration: 500ms; animation-fill-mode: both; border-color: red; }
 @keyframes shake { from, to { transform: translate3d(0, 0, 0); } 20%, 60% { transform: translate3d(-5px, 0, 0); } 40%, 80% { transform: translate3d(5px, 0, 0); } }
 .hover-bg-grey-grow:hover  { background-color: #EEEEEE; transition: 100ms ease-out; transform: scale(1.2); }
 .hover-bg-grey:hover  { background-color: #EEEEEE; transition: 100ms ease-out; }
+.reset-list-left-padding { -webkit-padding-start: 20px; -moz-padding-start: 20px; }
 
 /* @media */
 @media (max-width: 48em) {
