@@ -12,9 +12,6 @@
 .bg-green     { background-color: #6FC214; }
 .bg-white     { background-color: #FFFFFF; }
 
-/* border-box */
-.border-box { box-sizing: border-box; }
-
 /* border-radius */
 .br0          { border-radius: 0; }
 .br1          { border-radius: .125rem; }
@@ -61,9 +58,6 @@
 .right2 { right: 2rem; }
 
 /* bottom */
-.bottom0   { bottom: 0; }
-.bottom1   { bottom: 1rem; }
-.bottom2   { bottom: 2rem; }
 .bottom-1  { bottom: -1rem; }
 .bottom-2  { bottom: -2rem; }
 
@@ -357,7 +351,6 @@
 @keyframes shake { from, to { transform: translate3d(0, 0, 0); } 20%, 60% { transform: translate3d(-5px, 0, 0); } 40%, 80% { transform: translate3d(5px, 0, 0); } }
 .hover-bg-grey-grow:hover  { background-color: #EEEEEE; transition: 100ms ease-out; transform: scale(1.2); }
 .hover-bg-grey:hover  { background-color: #EEEEEE; transition: 100ms ease-out; }
-.reset-list-left-padding { -webkit-padding-start: 20px; -moz-padding-start: 20px; }
 
 /* @media */
 @media (max-width: 48em) {
