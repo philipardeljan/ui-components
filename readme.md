@@ -8,7 +8,5 @@
 * Include it in your project/app
 * Use any of the HTML components
 
-The entire component library can be found at: http://ui-components.com
-
 ## License
 MIT
